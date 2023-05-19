@@ -100,5 +100,9 @@ font-size: 14px;
 line-height: 16px;
 position: relative;
 bottom: 10px;
-top: 292px;
+top: 240px;
+}
+.divisor{
+    width: 620px;
+    border:1px solid #E3DED7;
 }
