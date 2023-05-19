@@ -78,7 +78,7 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 850px 147px;
+    padding: 850px 147px 0px 0px;
 }
 .ventana{
     display: flex;
