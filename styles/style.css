@@ -2,67 +2,103 @@ html,
 body {
     margin: 0;
     padding: 0;
+    width: 1280px;
 }
 
-.logo {
+.cafe {
+
+    left: 652px;
+    position: absolute;
+    bottom: 48px;
+    right: 40px;
+    top: 138px;
+}
+
+.logo,
+.Goto,
+.callus,
+.login,
+.Cart {
     display: flex;
     flex-direction: row;
     color: white;
     width: 186px;
     height: 36px;
     font-style: normal;
+    align-items: center;
     font-weight: 400;
     line-height: 35px;
     opacity: 0.86;
     bottom: 24px;
     top: 24px;
+    justify-content: center;
 
 }
+
+.callus {
+    width: 200px;
+    height: 24px;
+}
+
+
 
 header {
     display: flex;
     align-content: center;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: center;
     background: black;
     padding: 12px 40px;
-    gap: 341px;
+
 
     height: 64px;
 
 
 }
 
-.Goto {
-    color: white;
-    justify-content: space-between;
-    padding: 10px;
 
-
-    width: 300px;
-}
-
-.callus,
-.login {
-    color: white;
-    left: 905.05px;
+/* .cafe  */
+.Descripción {
     display: flex;
-}
-
-.Descripción #image {
-    display: flex;
-    flex-direction: row;
-    
-    gap: 8px;
-    padding: 48px 40px;    
-    width: 1280px;
+    flex-direction: column;
+    align-items: space-between;
+    flex-basis: content;
     height: 486px;
+    background: #E3DED74D 30%;
+
 
 }
 
+h1 {
 
-#declaracion {
+    line-height: 44px;
+    width: 588px;
+}
+
+#modelo {
+    height: 50px;
+    width: 600px;
+}
+
+#titulo,
+.declaracion,
+#modelo {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-shrink: inherit;
+    overflow-wrap: normal;
+    align-items: flex-start;
+
+
+
+}
+
+#declaracion,
+h3 {
     font-size: 40px;
+
 }
 
 #image {
@@ -70,39 +106,92 @@ header {
     left: 800px;
     align-items: center;
 }
-.Descripción{
-    position: absolute;
+
+#imageofcofferecolecting {
+    display: flex;
+    align-items: flex-end;
+    left: 700px;
+    margin-left: 700px;
+
 }
-.condiciones {
+
+.Descripción .condiciones .novedades .FAQ .Cometous .Contactus {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    padding: 850px 147px 0px 0px;
+    justify-content: flex-start;
 }
-.ventana{
+
+#titulo {
+    left: 40px;
+    color: green;
+}
+
+.producto {
+    color: white;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: initial;
+    height: 423px;
+    left: 500px;
+    position: relative;
+    flex-wrap: nowrap;
+}
+
+.condiciones {
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
-    padding: 0px;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url(https://s3-alpha-sig.figma.com/img/03a7/c79a/086aa1e226e5adfe010fd0fb3ff3e2cb?Expires=1685318400&Signature=CAlTit-JRAZrKabAm3GraaDpYhg3X0NGEEiH3QjpG96AmlsdEuz1H4N3ZFr-Y7uhCN-Ow7QXE20v18NxhYYx53i7koCVJUVRrLJ7llo8WvKunZequToJotQtdJ5WtH7PJeoImwJD2SbHN3v2wznyD10Pwg6f5qcc6nd4Q9KE6V-hBi0MVRuiudWWJyKpCBU3sPybGZt0dVlOFTKZFD6vnOkfSOIwnKozq3Rcx5uf1DrwFTm3botGQOe2xrpk-9w2l46CLbHpQiKQpaHEm8F5B-ydPB1pSWTtEU1Uvg2cfX94pvXdpj1ur8ONvGa71v1YeObFg4gbb7xBMd8LNwPl1g__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    width: 1280px;
+    height: 486px;
+    background-position: center center;
+    min-height: 60vh;
+
 }
-footer{
+
+.desplazamiento
+.envio
+.beneficios {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: 486px;
+    padding: 48px 40px;
+    gap: 8px;
+    width: 100px;
+    left: 10px;
+}
+
+
+footer {
     width: auto;
     background-color: black;
     height: 310px;
 }
+
 #copyrightfooter {
-display: flex;
-color:white;
-justify-content: center;
-font-size: 14px;
-line-height: 16px;
-position: relative;
-bottom: 10px;
-top: 240px;
+    display: flex;
+    color: white;
+    justify-content: center;
+    font-size: 14px;
+    line-height: 16px;
+    position: relative;
+    bottom: 10px;
+    top: 240px;
 }
-.divisor{
+
+.divisor {
     width: 620px;
-    border:1px solid #E3DED7;
+    border: 1px solid #E3DED7;
 }
+
+/* .Contactus, aside{
+    display: flex;
+} */
