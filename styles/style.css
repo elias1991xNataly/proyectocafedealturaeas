@@ -2,7 +2,7 @@ html,
 body {
     margin: 0;
     padding: 0;
-    width: 1280px;
+    
 }
 
 .cafe {
@@ -115,7 +115,7 @@ h3 {
 
 }
 
-.Descripción .condiciones .novedades .FAQ .Cometous .Contactus {
+.Descripción  .novedades .FAQ .Cometous .Contactus {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -127,16 +127,7 @@ h3 {
     color: green;
 }
 
-.producto {
-    color: white;
-    font-size: 24px;
-    line-height: 28px;
-    text-align: initial;
-    height: 423px;
-    left: 500px;
-    position: relative;
-    flex-wrap: nowrap;
-}
+
 
 .condiciones {
     display: flex;
@@ -144,31 +135,89 @@ h3 {
     justify-content: center;
     align-items: center;
     text-align: center;
+    align-self: flex-start;
     background-image: url(https://s3-alpha-sig.figma.com/img/03a7/c79a/086aa1e226e5adfe010fd0fb3ff3e2cb?Expires=1685318400&Signature=CAlTit-JRAZrKabAm3GraaDpYhg3X0NGEEiH3QjpG96AmlsdEuz1H4N3ZFr-Y7uhCN-Ow7QXE20v18NxhYYx53i7koCVJUVRrLJ7llo8WvKunZequToJotQtdJ5WtH7PJeoImwJD2SbHN3v2wznyD10Pwg6f5qcc6nd4Q9KE6V-hBi0MVRuiudWWJyKpCBU3sPybGZt0dVlOFTKZFD6vnOkfSOIwnKozq3Rcx5uf1DrwFTm3botGQOe2xrpk-9w2l46CLbHpQiKQpaHEm8F5B-ydPB1pSWTtEU1Uvg2cfX94pvXdpj1ur8ONvGa71v1YeObFg4gbb7xBMd8LNwPl1g__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4);
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: center;
-    width: 1280px;
     height: 486px;
     background-position: center center;
     min-height: 60vh;
+    padding: 40px;
 
 }
 
-.desplazamiento
-.envio
-.beneficios {
+.desplazamiento {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
+    align-items: center;
+    justify-content: center;
     height: 486px;
     padding: 48px 40px;
-    gap: 8px;
-    width: 100px;
+    width: 40px;
     left: 10px;
+    flex: content;
 }
 
+
+
+
+
+
+
+.buttonforbuying{
+    width: 64px;
+    height: 64px;
+    background-color: #2A5B45;
+    border-radius: 20px;
+    position:absolute;
+}
+.novedades{
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;    
+    justify-content: center;
+    height: 486px;
+}
+
+section.novedades{
+    display: flex;
+    flex-direction: row;
+    flex:none;
+    height: 348px;
+}
+
+p.producto{
+    color: white;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: initial;
+    height: 240px;
+    left: 200px;
+    position: relative;
+    bottom:100px ;
+}
+.FAQ{
+    background-color: #2A5B45;
+}
+
+div.desplazamiento {
+    width: 316px;
+    height: 232px;
+    left: 10px;
+    position: relative;
+    left: 20px;
+}
+
+div.envio {
+    width: 316px;
+    height: 232px;
+}
+
+div.beneficios {
+    width: 316px;
+    height: 232px;
+}
 
 footer {
     width: auto;
