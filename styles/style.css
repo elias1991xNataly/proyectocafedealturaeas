@@ -2,36 +2,26 @@ html,
 body {
     margin: 0;
     padding: 0;
-    
+
 }
 
-.cafe {
+.coffe {
 
-    left: 652px;
+    left: 880px;
     position: absolute;
     bottom: 48px;
     right: 40px;
     top: 138px;
 }
 
-.logo,
-.Goto,
-.callus,
-.login,
-.Cart {
-    display: flex;
-    flex-direction: row;
+
+.Goto {
     color: white;
-    width: 186px;
     height: 36px;
     font-style: normal;
-    align-items: center;
     font-weight: 400;
     line-height: 35px;
     opacity: 0.86;
-    bottom: 24px;
-    top: 24px;
-    justify-content: center;
 
 }
 
@@ -42,23 +32,29 @@ body {
 
 
 
-header {
+
+nav {
     display: flex;
-    align-content: center;
-    flex-direction: row;
-    justify-content: center;
+    align-content: flex-start;
+    justify-content: space-between;
     background: black;
     padding: 12px 40px;
-
+    color: white;
 
     height: 64px;
-
+    font-style: normal;
+    align-items: center;
+    font-weight: 400;
+    line-height: 35px;
+    opacity: 0.86;
+    bottom: 24px;
+    top: 24px;
 
 }
 
 
-/* .cafe  */
-.Descripción {
+
+.description {
     display: flex;
     flex-direction: column;
     align-items: space-between;
@@ -75,14 +71,14 @@ h1 {
     width: 588px;
 }
 
-#modelo {
+#model {
     height: 50px;
     width: 600px;
 }
 
-#titulo,
-.declaracion,
-#modelo {
+#title,
+.declaration,
+#model {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -95,7 +91,7 @@ h1 {
 
 }
 
-#declaracion,
+#declaration,
 h3 {
     font-size: 40px;
 
@@ -115,23 +111,38 @@ h3 {
 
 }
 
-.Descripción  .novedades .FAQ .Cometous .Contactus {
+div.separador {
+    display: flex;
+    justify-content: center;
+    background: black;
+    gap: 32px;
+
+
+}
+
+div.phone {
+    gap: 64px;
+}
+
+
+.Descripción .novelty .faq .cometous .contactus {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
 }
 
-#titulo {
+#title {
     left: 40px;
     color: green;
 }
 
 
 
-.condiciones {
+.coffeecards {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -140,54 +151,84 @@ h3 {
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: center;
-    height: 486px;
+    
     background-position: center center;
     min-height: 60vh;
     padding: 40px;
+    left: 40px;
+    align-content: flex-start;
 
 }
 
-.desplazamiento {
+article.coffeecardsconditions {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    justify-content: center;
     height: 486px;
     padding: 48px 40px;
     width: 40px;
     left: 10px;
     flex: content;
+    
+    column-gap: 16px;
+}
+
+.procedencia {
+    background-color: black;
+    color: white;
+    width: 168px;
+    justify-content: center;
+}
+
+#shop {
+    background-color: #2A5B45;
+}
+
+.procedencia {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    column-gap: 30px;
+}
+
+#procedencia {
+    width: 168px;
+    height: 40px;
 }
 
 
 
 
+.coffeecardsText{
+    color: #FFFFFF;
+}
 
-
-
-.buttonforbuying{
+.buttonforbuying {
     width: 64px;
     height: 64px;
     background-color: #2A5B45;
     border-radius: 20px;
-    position:absolute;
+    position: absolute;
+    bottom: 230px;
+    border: #FFFFFF;
 }
-.novedades{
+
+.novelty {
     background-color: #FFFFFF;
     display: flex;
-    align-items: center;    
+    align-items: center;
     justify-content: center;
     height: 486px;
 }
 
-section.novedades{
+section.novedades {
     display: flex;
     flex-direction: row;
-    flex:none;
+    flex: none;
     height: 348px;
 }
 
-p.producto{
+/* p.product {
     color: white;
     font-size: 24px;
     line-height: 28px;
@@ -195,29 +236,38 @@ p.producto{
     height: 240px;
     left: 200px;
     position: relative;
-    bottom:100px ;
-}
-.FAQ{
+    bottom: 100px;
+} */
+
+.FAQ {
     background-color: #2A5B45;
 }
 
-div.desplazamiento {
+div.coffeecard {
     width: 316px;
-    height: 232px;
+    height: 300px;
     left: 10px;
     position: relative;
     left: 20px;
+    background-color: #FFFFFF;
+    column-gap: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
 }
 
-div.envio {
+div.sending {
     width: 316px;
     height: 232px;
 }
 
-div.beneficios {
+div.benefits {
     width: 316px;
     height: 232px;
 }
+
 
 footer {
     width: auto;

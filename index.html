@@ -8,74 +8,77 @@
     <title>Document</title>
     <link rel="stylesheet" href="./styles/style.css">
 </head>
-<header>
-    <div class="logo">Cafedealtura.com <img src="images/Vector.png"></div>
-    <div class="Goto">Tienda</div>
-    <div class="Goto">Suscripción</div>
-    <div class="Goto">Para empresas</div>
-    <div class="Goto">Sobre nosotros</div>
-    <div class="Goto">Contacto</div>
-    <div class="callus" width=""> <img src="./images/Icon.png">+34 919 49 05 18</div>
-    <div class="login">Iniciar sesión</div>
-    <div class="Cart"></div>
 
-</header>
+<nav>
+    <p>cafedealtura.com <b> <img src="./images/Vector.png"></b></p>
+    <div class="separador">
+        <p class="Goto">Tienda</p>
+        <p class="Goto">Suscripción</p>
+        <p class="Goto">Para empresas</p>
+        <p class="Goto">Sobre nosotros</p>
+        <p class="Goto">Contacto</p>
+    </div>
+    <div class="phone">
+        <a href="/"><img src="./images/Icon.png">+34 919 49 05 18</a>
+
+
+        <button id="LogInButton">Iniciar sesión</button>
+    </div>
+    <b> <img src="./images/Vector.png"> </b>
+</nav>
 
 <body>
-    <section class="Descripción">
-        <h3 id="titulo">De la planta a tu taza</h3>
-        <h1 class="declaracion">El mejor café del mundo, ahora en tu casa.</h1>
-        <p id="modelo" style="font-size: 16px;">Trabajamos con agricultores de todo el mundo para seleccionar los
-            mejores
-            granos de café y que puedas
-            viajar desde la comodidad de tu hogar.
-            <img class="cafe" src="./images/Hero image (1).png" width="588" height="390">
-        </p>
-        <article id="imageofcofferecolecting"><img src="" alt=""></article>
+    <section class="description">
+        <article class="product">
+            <h3 id="title">De la planta a tu taza</h3>
+            <h1 class="declaration">El mejor café del mundo, ahora en tu casa.</h1>
+            <p id="model" style="font-size: 16px;">Trabajamos con agricultores de todo el mundo para seleccionar los
+                mejores
+                granos de café y que puedas
+                viajar desde la comodidad de tu hogar.
+            </p>
+            <div class="origin">
+                <button id="origin"> Descubrir Orígenes</button>
+                <button id="shop">Comprar café</button>
+            </div>
 
+        </article>
 
+        <img class="coffe" src="./images/Hero image (1).png" width="588" height="390">
     </section>
 
 
-    <section class="condiciones">
-
-
-        <div class="desplazamiento">
-            <button class="buttonforbuying" id="comprar"></button>
-
-
-
-            <h3>Recibe tu pedido sin preocuparte</h3>
-            <p>Tienes cosas más importantes en la cabeza por es con nuestras suscripción de café, nunca te quedarás sin
-                tu taza de la mañana.
-            </p>
-
-        </div>
-        <p class="producto">Café con las mejores condiciones</p>
-
-
-        <div class="desplazamiento">
-            <button class="buttonforbuying" id="envio"></button> 
-            <h3>Envío en 24/48h</h3>
-            <p>
-                Pide tu café antes de las 12h y lo recibirás al día siguiente.
-            </p>
-            
-        </div>
-        <div class="desplazamiento">
-            <button class="buttonforbuying" id="beneficios"></button>
-            <h3>Descuentos y beneficios</h3>
-            <p>
-                Cada dos meses, te regalamos una bolsa de un nuevo origen sorpresa, para que lo descubras junto a
-                nosotros.
-            </p>
-            
-        </div>
-
+    <section class="coffeecards">
+        <h1 class="coffeecardsText">Café con las mejores condiciones</h1>
+        <article class="coffeecardsconditions">
+            <div class="coffeecard">
+                <button class="buttonforbuying" id="shop"> <img src="./images/Icon (1).png"> </button>
+                <h3>Recibe tu pedido sin preocuparte</h3>
+                <p>Tienes cosas más importantes en la cabeza por es con nuestras suscripción de café, nunca te quedarás
+                    sin
+                    tu taza de la mañana.
+                </p>
+            </div>
+            <div class="coffeecard">
+                <button class="buttonforbuying" id="sending"> <img src="./images/Icon of truck.png"> </button>
+                <h3>Envío en 24/48h</h3>
+                <p>
+                    Pide tu café antes de las 12h y lo recibirás al día siguiente.
+                </p>
+            </div>
+            <div class="coffeecard">
+                <button class="buttonforbuying" id="benefits"> <img src="./images/Icon of gift.png"> </button>
+                <h3>Descuentos y beneficios</h3>
+                <p>
+                    Cada dos meses, te regalamos una bolsa de un nuevo origen sorpresa, para que lo descubras junto a
+                    nosotros.
+                </p>
+            </div>
+        </article>
     </section>
-    <section class="novedades">
+    <section class="novelty">
         <h2 style="color: #2A5B45">Novedades</h2>
-        <article >Costa Rica Tarrazú
+        <article>Costa Rica Tarrazú
             <hr>9,00€
             <button>Añadir</button>
         </article>
@@ -93,8 +96,8 @@
         </article>
         <button>Ver todos</button>
     </section>
-    <section class="FAQ">
-       <H2>Preguntas frecuentes</H2>
+    <section class="faq">
+        <H2>Preguntas frecuentes</H2>
         <article> ¿Cómo hago el pedido?
             <div class="divisor"></div>
             <p> Selecciona el café que desees probar y completa el proceso de compra. Si lo prefieres, te preguntaremos
@@ -112,7 +115,7 @@
 
         <button>Resolvemos tus dudas</button>
     </section>
-    <section class="Cometous">
+    <section class="cometous">
 
         <h3>Pruébalo en nuestro coffee shop</h3>
 
@@ -121,14 +124,12 @@
 
         <button>Cómo llegar</button>
     </section>
-    <section class="Contactus">
-
+    <section class="contactus">
         <h3>Entra en contacto con nosotros</h3>
         <p>Si tienes dudas, ponte en contacto con nosotros a rtavés del formularios y te responderemos lo antes posible.
         </p>
         <hr>
         <p>También puedes ponerte en contacto con nosotros en nuestra dirección o a través del teléfono de la tienda</p>
-
         <p>742 Evergreen Terrace
             Springfield, OR 12345
         </p>
@@ -137,30 +138,23 @@
         ¿Buscas un trabajo?<button>Ver nuestras ofertas</button>
         <aside>
             hashdadsqwdqd
-
-
         </aside>
     </section>
-
-
     <footer>
         <p class="logo" id="footerlogo">Cafedealtura.com</p>
         <p>Te ayudamos en </p>
         <button>+34 919 49 05 18</button>
         <button>hola@cafedealtura.com</button>
         <hr>
-        <button class="partesdelaweb">Tienda</button>
-        <button class="partesdelaweb">Suscripción</button>
-        <button class="partesdelaweb">Para empresas</button>
-        <button class="partesdelaweb">Sobre nosotros</button>
-        <button class="partesdelaweb">Contacto</button>
+        <button class="partsoftheweb">Tienda</button>
+        <button class="partsoftheweb">Suscripción</button>
+        <button class="partsoftheweb">Para empresas</button>
+        <button class="partsoftheweb">Sobre nosotros</button>
+        <button class="partsoftheweb">Contacto</button>
         <hr>
-        <button class="Políticas">Política de privacidad</button>
-        <button class="Políticas">Política de coockes</button>
-        <button class="Políticas">Términos y condiciones</button>
-
-
-
+        <button class="politics">Política de privacidad</button>
+        <button class="politics">Política de coockes</button>
+        <button class="politics">Términos y condiciones</button>
         <div id="copyrightfooter">Todos los derechos reservados - Café de Altura SL - 2022</div>
     </footer>
     <script src="main.js" type="module"></script>
