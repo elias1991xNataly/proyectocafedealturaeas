@@ -111,7 +111,7 @@ h3 {
 
 }
 
-div.separador {
+div.splitter {
     display: flex;
     justify-content: center;
     background: black;
@@ -125,7 +125,7 @@ div.phone {
 }
 
 
-.Descripción .novelty .faq .cometous .contactus {
+.description .novelty .faq .cometous .contactus {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -141,7 +141,6 @@ div.phone {
 
 .coffeecards {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
@@ -156,7 +155,7 @@ div.phone {
     min-height: 60vh;
     padding: 40px;
     left: 40px;
-    align-content: flex-start;
+    align-content: center;
 
 }
 
@@ -201,6 +200,8 @@ article.coffeecardsconditions {
 
 .coffeecardsText{
     color: #FFFFFF;
+    
+    
 }
 
 .buttonforbuying {
@@ -239,12 +240,12 @@ section.novedades {
     bottom: 100px;
 } */
 
-.FAQ {
+.faq {
     background-color: #2A5B45;
 }
 
 div.coffeecard {
-    width: 316px;
+    width: 400px;
     height: 300px;
     left: 10px;
     position: relative;
@@ -258,18 +259,10 @@ div.coffeecard {
     align-content: center;
 }
 
-div.sending {
-    width: 316px;
-    height: 232px;
-}
-
-div.benefits {
-    width: 316px;
-    height: 232px;
-}
 
 
-footer {
+
+#footer {
     width: auto;
     background-color: black;
     height: 310px;
@@ -286,7 +279,7 @@ footer {
     top: 240px;
 }
 
-.divisor {
+.divider {
     width: 620px;
     border: 1px solid #E3DED7;
 }
