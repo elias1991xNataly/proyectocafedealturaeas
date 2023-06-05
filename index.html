@@ -12,17 +12,17 @@
 <nav>
     <p>cafedealtura.com <b> <img src="./images/Vector.png"></b></p>
     <div class="splitter">
-        <p class="Goto">Tienda</p>
-        <p class="Goto">Suscripción</p>
-        <p class="Goto">Para empresas</p>
-        <p class="Goto">Sobre nosotros</p>
-        <p class="Goto">Contacto</p>
+        <p class="goto">Tienda</p>
+        <p class="goto">Suscripción</p>
+        <p class="goto">Para empresas</p>
+        <p class="goto">Sobre nosotros</p>
+        <p class="goto">Contacto</p>
     </div>
     <div class="phone">
-        <a href="/"><img src="./images/Icon.png">+34 919 49 05 18</a>
+        <a type="color:black" href="/"><img src="./images/Icon.png">+34 919 49 05 18</a>
 
 
-        <button id="LogInButton">Iniciar sesión</button>
+        <button id="logInButton">Iniciar sesión</button>
     </div>
     <b> <img src="./images/Vector.png"> </b>
 </nav>
@@ -47,7 +47,7 @@
         <img class="coffe" src="./images/Hero image (1).png" width="588" height="390">
     </section>
 
-
+    <!------------------------------COFFECARDS-------------------------------->
     <section class="coffeecards">
         <h1 class="coffeecardsText">Café con las mejores condiciones</h1>
         <article class="coffeecardsconditions">
@@ -77,50 +77,51 @@
         </article>
     </section>
 
-    <!------------------------------------------- NOVEDADES   -->
+    <!------------------------------------------- NOVELTY---------------------------------------------->
+    <h2 class="noveltyText" style="color: #2A5B45">Novedades</h2>
     <section class="novelty">
-        <h2 style="color: #2A5B45">Novedades</h2>
-        <article>Costa Rica Tarrazú
+        <div class="products"><img src="./images/pngwing 1.png"> <img class="tag"
+                src="./images/Coffee tag (1).png">Costa Rica Tarrazú
             <hr>9,00€
             <button>Añadir</button>
-        </article>
-        <article>Colombia Los Naranjos
+        </div>
+        <div class="products"><img src="./images/pngwing 1.png"> <img class="tag" src="./images/Coffee tag.png"> Los
+            Naranjos
             <hr>9,00€
             <button>Añadir</button>
-        </article>
-        <article>Laos Amanecer
+        </div>
+        <div class="products"><img src="./images/pngwing 1.png"><img class="tag" src="./images/Coffee tag (1).png">
+            Amanecer
             <hr>9,00€
             <button>Añadir</button>
-        </article>
-        <article>Etiopia Yrgacheff
+        </div>
+        <div class="products"><img src="./images/pngwing 1.png"><img class="tag"
+                src="./images/Coffee tag (2).png">Etiopia Yrgacheff
             <hr>9,00€
             <button>Añadir</button>
-        </article>
-        <button>Ver todos</button>
+        </div>
     </section>
+    <a href="#" class="noveltyButton">Ver todos<img src="./images/Icon (2).svg"></a>
     <!------------------------------------------  FAQS----------------->
     <section class="faq">
-        <H2>Preguntas frecuentes</H2>
-        <article> ¿Cómo hago el pedido?
-            <div class="divider"></div>
-            <p> Selecciona el café que desees probar y completa el proceso de compra. Si lo prefieres, te preguntaremos
-                cada cuánto quieres que te lo mandemos a casa y así nunca te quedarás sin café.</p>
-        </article>
-        <article>¿Por qué los precios son tan bajos?
-            <div class="divider"></div>
-            <hr>
-            Viajamos constantemente para encontrar los mejores granos y a los agricultores más exigentes. Si podemos
-            ofrecerte estos precios es porque tratamos directamente con los productores de café, sin intermediarios. Así
-            obtenemos el mejor precio para ti y la persona que está detrás de los granos de café recibe el mayor
-            beneficio posible.
-        </article>
-        <article>¿Es posible enviar café a mi oficina?</article>
-
+        <h2 style="color:#FFFFFF">Preguntas frecuentes</h2>
+        <div></div>
+        <h2>¿Cómo hago el pedido?</h2>
+        <div class="divider"></div>
+        <p> Selecciona el café que desees probar y completa el proceso de compra. Si lo prefieres, te preguntaremos
+            cada cuánto quieres que te lo mandemos a casa y así nunca te quedarás sin café.</p>
+        ¿Por qué los precios son tan bajos?
+        <div class="divider"></div>
+        Viajamos constantemente para encontrar los mejores granos y a los agricultores más exigentes. Si podemos
+        ofrecerte estos precios es porque tratamos directamente con los productores de café, sin intermediarios. Así
+        obtenemos el mejor precio para ti y la persona que está detrás de los granos de café recibe el mayor
+        beneficio posible.
+        ¿Es posible enviar café a mi oficina?
         <button>Resolvemos tus dudas</button>
     </section>
     <!----------------------- COFFE SHOP  --------------->
     <section class="cometous">
-        <div>
+        <div id="visitUs">
             <div>
                 <h2>Pruébalo en nuestro coffee shop</h2>
                 <p> Visita nuestra cafetería en el centro de la ciudad para probar los granos de café antes de hacer tu
@@ -131,14 +132,14 @@
                     <img src="./images/right arrow.png">
                 </div>
             </div>
-            <img src="./images/Hero coffe.png" alt="installment">
+            <img class="visitUs" id="cofehero" src="./images/Hero coffe.png" alt="installment">
         </div>
     </section>
 
     <!-------------------------------  FORM --------------->
     <section class="contactus">
-        <div>
-            <article>
+        <div class="carhero">
+            <article class="contactInfo">
                 <h3>Entra en contacto con nosotros</h3>
                 <p>Si tienes dudas, ponte en contacto con nosotros a rtavés del formularios y te responderemos lo antes
                     posible.
@@ -160,8 +161,8 @@
                         <p> ¿Buscas un trabajo?<a href="#">Ver nuestras ofertas</a></p>
                     </div>
                 </div>
-            </article class="form-article">
-            <article>
+            </article>
+            <article Class="form-article">
                 <form>
                     <div class="nameForm">
                         <label for="nameForm">Nombre completo</label>
@@ -204,8 +205,8 @@
     <!-------------------  FOOTER  -------------------->
     <footer id="footer">
         <div>
-            <div>
-                <p>cafedealtura.com</p>
+            <div class="">
+                <p class="logo">cafedealtura.com</p>
                 <img src="./images/Vector.png">
             </div>
             <div>
@@ -232,7 +233,7 @@
                         <a href="#">Sobre nosotros</a>
                         <a href="#">Contacto</a>
                     </div>
-                    <div class="Terms">
+                    <div class="terms">
                         <a href="#">Política de privacidad</a>
                         <a href="#">Política de coockes</a>
                         <a href="#">Términos y condiciones</a>

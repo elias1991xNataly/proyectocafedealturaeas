@@ -2,20 +2,57 @@ html,
 body {
     margin: 0;
     padding: 0;
+    font-family: sans-serif;
 
 }
 
-.coffe {
+/*-------------------------------------------------NAV-----------------------------------*/
+nav {
+    display: flex;
+    align-content: flex-start;
+    justify-content: space-between;
+    background: black;
+    padding: 12px 40px;
+    color: white;
+    height: 64px;
+    font-style: normal;
+    align-items: center;
+    font-weight: 400;
+    line-height: 35px;
+    opacity: 0.86;
+    bottom: 24px;
+    top: 24px;
+    padding: 12px;
 
-    left: 880px;
-    position: absolute;
-    bottom: 48px;
-    right: 40px;
-    top: 138px;
+}
+
+div.splitter {
+    display: flex;
+    justify-content: center;
+    background: black;
+    gap: 32px;
+
+
+}
+
+#logInButton {
+    padding: 12px 24px;
+    width: 130px;
+    height: 40px;
+    background-color: #515051;
+    color: #D3D3D3;
+}
+
+.phone a {
+    outline: none;
+    text-decoration: none;
+    color: #D3D3D3;
+    padding: 40px 12px;
+
 }
 
 
-.Goto {
+.goto {
     color: white;
     height: 36px;
     font-style: normal;
@@ -31,50 +68,45 @@ body {
 }
 
 
-
-
-nav {
-    display: flex;
-    align-content: flex-start;
-    justify-content: space-between;
-    background: black;
-    padding: 12px 40px;
-    color: white;
-
-    height: 64px;
-    font-style: normal;
-    align-items: center;
-    font-weight: 400;
-    line-height: 35px;
-    opacity: 0.86;
-    bottom: 24px;
-    top: 24px;
-
-}
-
-
-
-.description {
-    display: flex;
-    flex-direction: column;
-    align-items: space-between;
-    flex-basis: content;
-    height: 486px;
-    background: #E3DED74D 30%;
-
-
-}
-
 h1 {
 
     line-height: 44px;
-    width: 588px;
+    width: 1288px;
 }
 
+/*-------------------------------------------------DESCRIPTION-----------------------------------*/
 #model {
     height: 50px;
     width: 600px;
 }
+
+.description {
+    display: flex;
+    flex-direction: column;
+    flex-basis: content;
+    height: 486px;
+    background: #E3DED74D 30%;
+    padding: 48px 40px;
+    gap: 8px;
+
+
+}
+
+.description .coffe {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.coffe {
+
+    left: 1500px;
+    position: absolute;
+    bottom: 48px;
+    right: 40px;
+    top: 138px;
+}
+
 
 #title,
 .declaration,
@@ -97,11 +129,6 @@ h3 {
 
 }
 
-#image {
-    border-radius: 20px;
-    left: 800px;
-    align-items: center;
-}
 
 #imageofcofferecolecting {
     display: flex;
@@ -111,52 +138,18 @@ h3 {
 
 }
 
-div.splitter {
-    display: flex;
-    justify-content: center;
-    background: black;
-    gap: 32px;
 
-
-}
 
 div.phone {
     gap: 64px;
 }
 
-
+/*------------------------------------------------COFFECARDS------------------------------*/
 .description .novelty .faq .cometous .contactus {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-}
-
-#title {
-    left: 40px;
-    color: green;
-}
-
-
-
-.coffeecards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    align-self: flex-start;
-    background-image: url(https://s3-alpha-sig.figma.com/img/03a7/c79a/086aa1e226e5adfe010fd0fb3ff3e2cb?Expires=1685318400&Signature=CAlTit-JRAZrKabAm3GraaDpYhg3X0NGEEiH3QjpG96AmlsdEuz1H4N3ZFr-Y7uhCN-Ow7QXE20v18NxhYYx53i7koCVJUVRrLJ7llo8WvKunZequToJotQtdJ5WtH7PJeoImwJD2SbHN3v2wznyD10Pwg6f5qcc6nd4Q9KE6V-hBi0MVRuiudWWJyKpCBU3sPybGZt0dVlOFTKZFD6vnOkfSOIwnKozq3Rcx5uf1DrwFTm3botGQOe2xrpk-9w2l46CLbHpQiKQpaHEm8F5B-ydPB1pSWTtEU1Uvg2cfX94pvXdpj1ur8ONvGa71v1YeObFg4gbb7xBMd8LNwPl1g__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position-x: center;
-    
-    background-position: center center;
-    min-height: 60vh;
-    padding: 40px;
-    left: 40px;
-    align-content: center;
-
 }
 
 article.coffeecardsconditions {
@@ -168,82 +161,20 @@ article.coffeecardsconditions {
     width: 40px;
     left: 10px;
     flex: content;
-    
+
     column-gap: 16px;
 }
 
-.procedencia {
-    background-color: black;
-    color: white;
-    width: 168px;
-    justify-content: center;
+
+
+
+
+#title {
+    left: 40px;
+    color: green;
 }
 
-#shop {
-    background-color: #2A5B45;
-}
-
-.procedencia {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    column-gap: 30px;
-}
-
-#procedencia {
-    width: 168px;
-    height: 40px;
-}
-
-
-
-
-.coffeecardsText{
-    color: #FFFFFF;
-    
-    
-}
-
-.buttonforbuying {
-    width: 64px;
-    height: 64px;
-    background-color: #2A5B45;
-    border-radius: 20px;
-    position: absolute;
-    bottom: 230px;
-    border: #FFFFFF;
-}
-
-.novelty {
-    background-color: #FFFFFF;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 486px;
-}
-
-section.novedades {
-    display: flex;
-    flex-direction: row;
-    flex: none;
-    height: 348px;
-}
-
-/* p.product {
-    color: white;
-    font-size: 24px;
-    line-height: 28px;
-    text-align: initial;
-    height: 240px;
-    left: 200px;
-    position: relative;
-    bottom: 100px;
-} */
-
-.faq {
-    background-color: #2A5B45;
-}
-
+/*importante*/
 div.coffeecard {
     width: 400px;
     height: 300px;
@@ -260,6 +191,204 @@ div.coffeecard {
 }
 
 
+
+.coffeecards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    align-self: flex-start;
+    background-image: url(https://s3-alpha-sig.figma.com/img/03a7/c79a/086aa1e226e5adfe010fd0fb3ff3e2cb?Expires=1685318400&Signature=CAlTit-JRAZrKabAm3GraaDpYhg3X0NGEEiH3QjpG96AmlsdEuz1H4N3ZFr-Y7uhCN-Ow7QXE20v18NxhYYx53i7koCVJUVRrLJ7llo8WvKunZequToJotQtdJ5WtH7PJeoImwJD2SbHN3v2wznyD10Pwg6f5qcc6nd4Q9KE6V-hBi0MVRuiudWWJyKpCBU3sPybGZt0dVlOFTKZFD6vnOkfSOIwnKozq3Rcx5uf1DrwFTm3botGQOe2xrpk-9w2l46CLbHpQiKQpaHEm8F5B-ydPB1pSWTtEU1Uvg2cfX94pvXdpj1ur8ONvGa71v1YeObFg4gbb7xBMd8LNwPl1g__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position: center center;
+    min-height: 60vh;
+    padding: 40px;
+    left: 40px;
+    align-content: center;
+
+}
+
+/*------------------------------------------novelty-------------------------------------*/
+.novelty {
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    /* height: 486px; */
+    align-content: center;
+    align-items: baseline;
+}
+
+.tag {
+    top: -200px;
+    position: relative;
+}
+
+
+
+.noveltyText {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    line-height: 44px;
+
+
+}
+
+.noveltyButton {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    text-decoration: underline;
+    color: black;
+
+
+}
+
+div.products {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 282px;
+    height: auto;
+    border: 1px solid #EDEAE6;
+    gap: 24px;
+}
+
+section.novedades {
+    display: flex;
+    flex-direction: row;
+    flex: none;
+    height: 348px;
+}
+
+/*--------------------------------------------COFFE SHOP---------------------*/
+.cometous {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: stretch;
+    flex-wrap: wrap;
+}
+
+#visitUs {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 390px;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+}
+
+
+.visitUs {
+    width: 400px;
+}
+
+/* #cofehero {
+
+} */
+/*----------------------------------------FORMS----------------------------------*/
+section.contactus .carhero {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: auto;
+    justify-content: center;
+    
+    gap: 24px;
+    width: 1200px;
+}
+
+.contactInfo {
+    background-color: #E3DED7;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-article{
+    width: 588px;
+    height: 552px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#shop {
+    background-color: #2A5B45;
+}
+
+
+
+
+.coffeecardsText {
+    color: #FFFFFF;
+
+
+}
+
+.buttonforbuying {
+    width: 64px;
+    height: 64px;
+    background-color: #2A5B45;
+    border-radius: 20px;
+    position: absolute;
+    bottom: 230px;
+    border: #FFFFFF;
+}
+
+/* p.product {
+    color: white;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: initial;
+    height: 240px;
+    left: 200px;
+    position: relative;
+    bottom: 100px;
+} */
+
+
+
+
+
+
+/*-------------------------------------------------------FAQS-----------------------------------------*/
+.divider {
+    width: 620px;
+    border: 1px solid #E3DED7;
+}
+
+/* .Contactus, aside{
+    display: flex;
+} */
+#faq {
+    color: #FFFFFF;
+}
+
+.faq {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2A5B45;
+
+}
+
+/*------------------------------------------------------------FOOTER----------------------------*/
 
 
 #footer {
@@ -279,11 +408,7 @@ div.coffeecard {
     top: 240px;
 }
 
-.divider {
-    width: 620px;
-    border: 1px solid #E3DED7;
-}
+.logo {
+    color: white;
 
-/* .Contactus, aside{
-    display: flex;
-} */
+}
