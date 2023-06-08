@@ -533,7 +533,10 @@ section.contactus {
     bottom: 10px;
     
 }
-
+.waysOfContact{
+    display: flex;
+    flex-direction: column;
+}
 #wehelpyou {
     color: white;
 
