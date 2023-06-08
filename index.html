@@ -6,7 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    
     <link rel="stylesheet" href="./styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;400&display=swap" rel="stylesheet">
 </head>
 
 <nav>
@@ -82,22 +86,22 @@
     <section class="novelty">
         <div class="products"><img src="./images/pngwing 1.png"> <img class="tag"
                 src="./images/Coffee tag (1).png">Costa Rica Tarrazú
-            <hr>9,00€
+            <div>9,00€</div>
             <button>Añadir</button>
         </div>
         <div class="products"><img src="./images/pngwing 1.png"> <img class="tag" src="./images/Coffee tag.png"> Los
             Naranjos
-            <hr>9,00€
+            <div>9,00€</div>
             <button>Añadir</button>
         </div>
-        <div class="products"><img src="./images/pngwing 1.png"><img class="tag" src="./images/Coffee tag (1).png">
+        <div class="products"><img src="./images/pngwing 1.png"><img class="tag" src="./images/Coffee tag (3).png">
             Amanecer
-            <hr>9,00€
+            <div>9,00€</div>
             <button>Añadir</button>
         </div>
         <div class="products"><img src="./images/pngwing 1.png"><img class="tag"
                 src="./images/Coffee tag (2).png">Etiopia Yrgacheff
-            <hr>9,00€
+            <div>9,00€</div>
             <button>Añadir</button>
         </div>
     </section>
@@ -121,85 +125,85 @@
     </section>
     <!----------------------- COFFE SHOP  --------------->
     <section class="cometous">
-        <div id="visitUs">
+        <div class="blockInfoCoffe">
+            <h2 id="tryit">Pruébalo en nuestro coffee shop</h2>
+            <p id="ourshopinthemid"> Visita nuestra cafetería en el centro de la ciudad para probar los granos de café
+                antes de hacer tu
+                pedido y
+                llévate un descuento.</p>
             <div>
-                <h2>Pruébalo en nuestro coffee shop</h2>
-                <p> Visita nuestra cafetería en el centro de la ciudad para probar los granos de café antes de hacer tu
-                    pedido y
-                    llévate un descuento</p>
-                <div>
-                    <a href="#">Cómo llegar</a>
-                    <img src="./images/right arrow.png">
-                </div>
+                <a id="reachus" style="color:#3E3D3D" href="#">Cómo llegar</a>
+                <img src="./images/right arrow.png">
             </div>
+        </div>
+        <div class="blockImageCoffe">
             <img class="visitUs" id="cofehero" src="./images/Hero coffe.png" alt="installment">
         </div>
     </section>
 
     <!-------------------------------  FORM --------------->
     <section class="contactus">
-        <div class="carhero">
-            <article class="contactInfo">
-                <h3>Entra en contacto con nosotros</h3>
-                <p>Si tienes dudas, ponte en contacto con nosotros a rtavés del formularios y te responderemos lo antes
-                    posible.
-                </p>
+        <article class="contactInfo">
+            <h3>Entra en contacto con nosotros</h3>
+            <p>Si tienes dudas, ponte en contacto con nosotros a rtavés del formularios y te responderemos lo antes
+                posible.
+            </p>
+            <div>
+                <p>También puedes ponerte en contacto con nosotros en nuestra dirección o a través del teléfono de
+                    la tienda</p>
                 <div>
-                    <p>También puedes ponerte en contacto con nosotros en nuestra dirección o a través del teléfono de
-                        la tienda</p>
-                    <div>
-                        <p>742 Evergreen Terrace </p>
-                        <p>Springfield, OR 12345</p>
-                    </div>
-                    <div>
-                        <p> +1(555)123-4567</p>
-                    </div>
-                    <div class="mail">
-                        <p>support@example.com</p>
-                    </div>
-                    <div>
-                        <p> ¿Buscas un trabajo?<a href="#">Ver nuestras ofertas</a></p>
+                    <p>742 Evergreen Terrace </p>
+                    <p>Springfield, OR 12345</p>
+                </div>
+                <div>
+                    <p> +1(555)123-4567</p>
+                </div>
+                <div class="mail">
+                    <p>support@example.com</p>
+                </div>
+                <div>
+                    <p> ¿Buscas un trabajo?<a id="ourOffers" href="#">Ver nuestras ofertas</a></p>
+                </div>
+            </div>
+        </article>
+        <article Class="form-article">
+            <form>
+                <div class="nameForm">
+                    <label for="nameForm">Nombre completo</label>
+                    <input type="text" name="nameForm" id="nameForm" required>
+                </div>
+                <div class="email">
+                    <label for="emailForm">Email</label>
+                    <input type="email" name="emailForm" id="emailForm" required>
+                </div>
+                <div class="telephoneForm">
+                    <label for="phoneForm">Teléfono</label>
+                    <div class="input-phone">
+                        <select name="numbersPhone" id="opt">
+                            <option value="us">US</option>
+                            <option value="es">ES</option>
+                            <option value="gr">GR</option>
+                            <option value="fr">FR</option>
+                            <option value="it">IT</option>
+                        </select>
+                        <input type="number" name="numbersPhone" id="numbersPhone" placeholder="+1 (555) 987-6543"
+                            required minlength="8" maxlength="11">
                     </div>
                 </div>
-            </article>
-            <article Class="form-article">
-                <form>
-                    <div class="nameForm">
-                        <label for="nameForm">Nombre completo</label>
-                        <input type="text" name="nameForm" id="nameForm" required>
-                    </div>
-                    <div class="email">
-                        <label for="emailForm">Email</label>
-                        <input type="email" name="emailForm" id="emailForm" required>
-                    </div>
-                    <div class="telephoneForm">
-                        <label for="phoneForm">Teléfono</label>
-                        <div class="input-phone">
-                            <select name="numbersPhone" id="opt">
-                                <option value="us">US</option>
-                                <option value="es">ES</option>
-                                <option value="gr">GR</option>
-                                <option value="fr">FR</option>
-                                <option value="it">IT</option>
-                            </select>
-                            <input type="number" name="numbersPhone" id="numbersPhone" placeholder="+1 (555) 987-6543"
-                                required minlength="8" maxlength="11">
-                        </div>
-                    </div>
-                    <div class="textArea">
-                        <label for="textareaForm"></label>
-                        <textarea name="textareaForm" id="textareaForm" cols="30" rows="10"
-                            placeholder="¿En qué podemos ayudarte?" required></textarea>
-                    </div>
-                    <div class="checkTerms">
-                        <input type="checkbox" name="checkForm" id="checkForm" value="acept">
-                        <label for="checkForm"><a href="#">Acepto la <span id="strong">Política de Privacidad</span> y
-                                los <span id="strong">Términos y condiciones.</span></a></label>
-                    </div>
-                    <button type="submit" id="buttonForm">Enviar</button>
-                </form>
-            </article>
-        </div>
+                <div class="textArea">
+                    <label for="textareaForm"></label>
+                    <textarea name="textareaForm" id="textareaForm" cols="30" rows="10"
+                        placeholder="¿En qué podemos ayudarte?" required></textarea>
+                </div>
+                <div class="checkTerms">
+                    <input type="checkbox" name="checkForm" id="checkForm" value="acept">
+                    <label for="checkForm"><a id="termsandConditions" href="#">Acepto la <span id="strong">Política de
+                                Privacidad</span> y
+                            los <span id="strong">Términos y condiciones.</span></a></label>
+                </div>
+                <button type="submit" id="buttonForm">Enviar</button>
+            </form>
+        </article>
     </section>
 
     <!-------------------  FOOTER  -------------------->
@@ -209,40 +213,35 @@
                 <p class="logo">cafedealtura.com</p>
                 <img src="./images/Vector.png">
             </div>
-            <div>
+            <h3 id="wehelpyou">Te ayudamos en</h3>
+            <button>
                 <div>
-                    <h3>Te ayudamos en</h3>
-                    <button>
-                        <div>
-                            <img src="./images/Icon.png">
-                            <p>+34 919 49 05 18</p>
-                        </div>
-                    </button>
-                    <button>
-                        <div>
-                            <img src="./images/Icon (2).png">
-                            <p>hola@cafedealtura.com</p>
-                        </div>
-                    </button>
+                    <img src="./images/Icon.png">
+                    <p>+34 919 49 05 18</p>
                 </div>
+            </button>
+            <button>
                 <div>
-                    <div class="directions">
-                        <a href="#">Tienda</a>
-                        <a href="#">Suscripción</a>
-                        <a href="#">Para empresas</a>
-                        <a href="#">Sobre nosotros</a>
-                        <a href="#">Contacto</a>
-                    </div>
-                    <div class="terms">
-                        <a href="#">Política de privacidad</a>
-                        <a href="#">Política de coockes</a>
-                        <a href="#">Términos y condiciones</a>
-                    </div>
+                    <img src="./images/Icon (2).png">
+                    <p>hola@cafedealtura.com</p>
                 </div>
-            </div>
-            <div id="copyrightfooter">
-                <p>Todos los derechos reservados - Café de Altura SL - 2022</p>
-            </div>
+            </button>
+        </div>
+        <div class="directions">
+            <a href="#">Tienda</a>
+            <a href="#">Suscripción</a>
+            <a href="#">Para empresas</a>
+            <a href="#">Sobre nosotros</a>
+            <a href="#">Contacto</a>
+        </div>
+        <div class="terms">
+            <a href="#">Política de privacidad</a>
+            <a href="#">Política de coockes</a>
+            <a href="#">Términos y condiciones</a>
+        </div>
+        </div>
+        <div id="copyrightfooter">
+            <p>Todos los derechos reservados - Café de Altura SL - 2022</p>
         </div>
     </footer>
     <script src="main.js" type="module"></script>

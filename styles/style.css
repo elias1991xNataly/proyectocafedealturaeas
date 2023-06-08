@@ -2,7 +2,7 @@ html,
 body {
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
+    font-family: 'Outfit', sans-serif;
 
 }
 
@@ -80,6 +80,17 @@ h1 {
     width: 600px;
 }
 
+#shop {
+    background-color: #2A5B45;
+    color: white;
+}
+
+#origin {
+    background-color: #1F1815;
+    color: #FFFFFF;
+
+}
+
 .description {
     display: flex;
     flex-direction: column;
@@ -100,7 +111,6 @@ h1 {
 
 .coffe {
 
-    left: 1500px;
     position: absolute;
     bottom: 48px;
     right: 40px;
@@ -123,10 +133,11 @@ h1 {
 
 }
 
-#declaration,
+.declaration,
 h3 {
     font-size: 40px;
-
+    width: fit-content;
+    block-size: fit-content;
 }
 
 
@@ -163,6 +174,17 @@ article.coffeecardsconditions {
     flex: content;
 
     column-gap: 16px;
+}
+
+
+.buttonforbuying {
+    width: 64px;
+    height: 64px;
+    background-color: #2A5B45;
+    border-radius: 20px;
+    position: absolute;
+    bottom: 230px;
+    border: #FFFFFF;
 }
 
 
@@ -221,6 +243,7 @@ div.coffeecard {
     /* height: 486px; */
     align-content: center;
     align-items: baseline;
+    margin: 40px;
 }
 
 .tag {
@@ -270,64 +293,10 @@ section.novedades {
     height: 348px;
 }
 
-/*--------------------------------------------COFFE SHOP---------------------*/
-.cometous {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-content: stretch;
-    flex-wrap: wrap;
-}
-
-#visitUs {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    height: 390px;
-    flex-wrap: wrap;
-    align-content: center;
-    align-items: center;
-}
-
-
-.visitUs {
-    width: 400px;
-}
 
 /* #cofehero {
 
 } */
-/*----------------------------------------FORMS----------------------------------*/
-section.contactus .carhero {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    width: auto;
-    justify-content: center;
-    
-    gap: 24px;
-    width: 1200px;
-}
-
-.contactInfo {
-    background-color: #E3DED7;
-    display: flex;
-    flex-direction: column;
-}
-
-.form-article{
-    width: 588px;
-    height: 552px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-#shop {
-    background-color: #2A5B45;
-}
-
 
 
 
@@ -337,15 +306,6 @@ section.contactus .carhero {
 
 }
 
-.buttonforbuying {
-    width: 64px;
-    height: 64px;
-    background-color: #2A5B45;
-    border-radius: 20px;
-    position: absolute;
-    bottom: 230px;
-    border: #FFFFFF;
-}
 
 /* p.product {
     color: white;
@@ -357,8 +317,6 @@ section.contactus .carhero {
     position: relative;
     bottom: 100px;
 } */
-
-
 
 
 
@@ -385,16 +343,105 @@ section.contactus .carhero {
     justify-content: space-between;
     align-items: center;
     background-color: #2A5B45;
-
 }
 
-/*------------------------------------------------------------FOOTER----------------------------*/
+/*--------------------------------------------COFFE SHOP---------------------*/
+.cometous {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 48px 40px;
+    align-items: center;
+}
 
+
+#ourshopinthemid {
+    width: 510px;
+    block-size: fit-content;
+}
+
+#tryit {
+    color: #376450;
+}
+
+#reachus {
+    color: #3E3D3D;
+}
+
+#visitUs {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 390px;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+}
+
+#cofehero {
+    width: 588px;
+    border-radius: 20px;
+    padding: 40px;
+}
+
+.visitUs {
+    width: 400px;
+}
+
+/*----------------------------------------FORM----------------------------------*/
+section.contactus {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: auto;
+    justify-content: center;
+
+    gap: 24px;
+    width: 1200px;
+}
+
+#ourOffers {
+    color: #1F1815;
+    font-weight: bolder;
+}
+
+.contactInfo {
+    background-color: #E3DED7;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-article {
+    width: 588px;
+    height: 552px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+#termsandConditions {
+    color: black;
+    font-weight: bold;
+}
+
+
+
+
+/*------------------------------------------------------------FOOTER----------------------------*/
+/*eventlisteners, web storages, */
 
 #footer {
     width: auto;
     background-color: black;
     height: 310px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
 }
 
 #copyrightfooter {
@@ -402,13 +449,27 @@ section.contactus .carhero {
     color: white;
     justify-content: center;
     font-size: 14px;
-    line-height: 16px;
     position: relative;
     bottom: 10px;
     top: 240px;
 }
 
-.logo {
+#wehelpyou {
     color: white;
 
+}
+
+.logo {
+    color: white;
+    margin: 0px;
+}
+
+.directions {
+    display: flex;
+    flex-direction: column;
+}
+
+.terms {
+    display: flex;
+    flex-direction: column;
 }
