@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    
+
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -56,7 +56,7 @@
         <h1 class="coffeecardsText">Café con las mejores condiciones</h1>
         <article class="coffeecardsconditions">
             <div class="coffeecard">
-                <button class="buttonforbuying" id="shop"> <img src="./images/Icon (1).png"> </button>
+                <button class="buttonforbuying"> <img src="./images/Icon (1).png"> </button>
                 <h3>Recibe tu pedido sin preocuparte</h3>
                 <p>Tienes cosas más importantes en la cabeza por es con nuestras suscripción de café, nunca te quedarás
                     sin
@@ -84,44 +84,53 @@
     <!------------------------------------------- NOVELTY---------------------------------------------->
     <h2 class="noveltyText" style="color: #2A5B45">Novedades</h2>
     <section class="novelty">
-        <div class="products"><img src="./images/pngwing 1.png"> <img class="tag"
-                src="./images/Coffee tag (1).png">Costa Rica Tarrazú
+        <div class="products"><img class="imageSetUp" src="./images/Images.svg">Costa Rica Tarrazú
             <div>9,00€</div>
-            <button>Añadir</button>
+            <button class="addButton">Añadir</button>
         </div>
-        <div class="products"><img src="./images/pngwing 1.png"> <img class="tag" src="./images/Coffee tag.png"> Los
+        <div class="products"><img class="imageSetUp" src="./images/Images (1).svg"> Los
             Naranjos
             <div>9,00€</div>
-            <button>Añadir</button>
+            <button class="addButton">Añadir</button>
         </div>
-        <div class="products"><img src="./images/pngwing 1.png"><img class="tag" src="./images/Coffee tag (3).png">
+        <div class="products"><img class="imageSetUp" src="./images/Images2.svg">
             Amanecer
             <div>9,00€</div>
-            <button>Añadir</button>
+            <button class="addButton">Añadir</button>
         </div>
-        <div class="products"><img src="./images/pngwing 1.png"><img class="tag"
-                src="./images/Coffee tag (2).png">Etiopia Yrgacheff
+        <div class="products"><img class="imageSetUp" src="./images/Images 3.svg">
+            Etiopia Yrgacheff
             <div>9,00€</div>
-            <button>Añadir</button>
+            <button class="addButton">Añadir</button>
         </div>
     </section>
+    <!-- <a href="#" class="noveltyButton">Ver todos<img class="arrowSetup" src="./images/Icon (2).svg"></a> -->
     <a href="#" class="noveltyButton">Ver todos<img src="./images/Icon (2).svg"></a>
+
     <!------------------------------------------  FAQS----------------->
     <section class="faq">
         <h2 style="color:#FFFFFF">Preguntas frecuentes</h2>
-        <div></div>
-        <h2>¿Cómo hago el pedido?</h2>
-        <div class="divider"></div>
-        <p> Selecciona el café que desees probar y completa el proceso de compra. Si lo prefieres, te preguntaremos
-            cada cuánto quieres que te lo mandemos a casa y así nunca te quedarás sin café.</p>
-        ¿Por qué los precios son tan bajos?
-        <div class="divider"></div>
-        Viajamos constantemente para encontrar los mejores granos y a los agricultores más exigentes. Si podemos
-        ofrecerte estos precios es porque tratamos directamente con los productores de café, sin intermediarios. Así
-        obtenemos el mejor precio para ti y la persona que está detrás de los granos de café recibe el mayor
-        beneficio posible.
-        ¿Es posible enviar café a mi oficina?
-        <button>Resolvemos tus dudas</button>
+        <!-- <div></div> -->
+        <div class="divider">
+            <h2>¿Cómo hago el pedido?</h2>
+
+            <p> Selecciona el café que desees probar y completa el proceso de compra. Si lo prefieres, te preguntaremos
+                cada cuánto quieres que te lo mandemos a casa y así nunca te quedarás sin café.</p>
+        </div>
+        <div class="divider">
+            <h2>¿Por qué los precios son tan bajos?</h2>
+            <!-- <div class="divider"></div> -->
+            Viajamos constantemente para encontrar los mejores granos y a los agricultores más exigentes. Si podemos
+            ofrecerte estos precios es porque tratamos directamente con los productores de café, sin intermediarios. Así
+            obtenemos el mejor precio para ti y la persona que está detrás de los granos de café recibe el mayor
+            beneficio posible.
+        </div>
+        <div class="divider">
+            <h2>¿Es posible enviar café a mi oficina?</h2>
+        </div>
+        <div class="resolveDoubts">
+            <a href="#" class="resolveDoubts">Resolvemos tus dudas<img src="./images/Icon (3).svg"></a>
+        </div>
     </section>
     <!----------------------- COFFE SHOP  --------------->
     <section class="cometous">
@@ -131,9 +140,9 @@
                 antes de hacer tu
                 pedido y
                 llévate un descuento.</p>
-            <div>
-                <a id="reachus" style="color:#3E3D3D" href="#">Cómo llegar</a>
-                <img src="./images/right arrow.png">
+            <div id="reachus">
+                <a id="reachus" style="color:#3E3D3D" href="#">Cómo llegar<img src="./images/right arrow.png"></a>
+
             </div>
         </div>
         <div class="blockImageCoffe">
@@ -144,7 +153,7 @@
     <!-------------------------------  FORM --------------->
     <section class="contactus">
         <article class="contactInfo">
-            <h3>Entra en contacto con nosotros</h3>
+            <h3 id="headerOfContactUs">Entra en contacto con nosotros</h3>
             <p>Si tienes dudas, ponte en contacto con nosotros a rtavés del formularios y te responderemos lo antes
                 posible.
             </p>
@@ -166,44 +175,45 @@
                 </div>
             </div>
         </article>
-        <article Class="form-article">
-            <form>
-                <div class="nameForm">
-                    <label for="nameForm">Nombre completo</label>
-                    <input type="text" name="nameForm" id="nameForm" required>
+        <!-- class="form-article" -->
+        <form class="form">
+            <!-- class="separator" -->
+            <div class="nameForm">
+                <label for="nameForm">Nombre completo</label>
+                <input type="text" name="nameForm" id="nameForm" required>
+            </div>
+            <div class="email">
+                <label for="emailForm">Email</label>
+                <input type="email" name="emailForm" id="emailForm" required>
+            </div>
+            <div class="telephoneForm">
+                <label for="phoneForm">Teléfono</label>
+                <div class="input-phone">
+                    <select name="numbersPhone" id="opt">
+                        <option value="us">US</option>
+                        <option value="es">ES</option>
+                        <option value="gr">GR</option>
+                        <option value="fr">FR</option>
+                        <option value="it">IT</option>
+                    </select>
+                    <input type="number" name="numbersPhone" id="numbersPhone" placeholder="+1 (555) 987-6543" required
+                        minlength="8" maxlength="11">
                 </div>
-                <div class="email">
-                    <label for="emailForm">Email</label>
-                    <input type="email" name="emailForm" id="emailForm" required>
-                </div>
-                <div class="telephoneForm">
-                    <label for="phoneForm">Teléfono</label>
-                    <div class="input-phone">
-                        <select name="numbersPhone" id="opt">
-                            <option value="us">US</option>
-                            <option value="es">ES</option>
-                            <option value="gr">GR</option>
-                            <option value="fr">FR</option>
-                            <option value="it">IT</option>
-                        </select>
-                        <input type="number" name="numbersPhone" id="numbersPhone" placeholder="+1 (555) 987-6543"
-                            required minlength="8" maxlength="11">
-                    </div>
-                </div>
-                <div class="textArea">
-                    <label for="textareaForm"></label>
-                    <textarea name="textareaForm" id="textareaForm" cols="30" rows="10"
-                        placeholder="¿En qué podemos ayudarte?" required></textarea>
-                </div>
-                <div class="checkTerms">
-                    <input type="checkbox" name="checkForm" id="checkForm" value="acept">
-                    <label for="checkForm"><a id="termsandConditions" href="#">Acepto la <span id="strong">Política de
-                                Privacidad</span> y
-                            los <span id="strong">Términos y condiciones.</span></a></label>
-                </div>
-                <button type="submit" id="buttonForm">Enviar</button>
-            </form>
-        </article>
+            </div>
+            <div class="textArea">
+                <label for="textareaForm"></label>
+                <textarea name="textareaForm" id="textareaForm" cols="30" rows="10"
+                    placeholder="¿En qué podemos ayudarte?" required></textarea>
+            </div>
+            <div class="checkTerms">
+                <input type="checkbox" name="checkForm" id="checkForm" value="acept">
+                <label for="checkForm"><a id="termsandConditions" href="#">Acepto la <span id="strong">Política de
+                            Privacidad</span> y
+                        los <span id="strong">Términos y condiciones.</span></a></label>
+            </div>
+            <button type="submit" id="buttonForm">Enviar</button>
+        </form>
+
     </section>
 
     <!-------------------  FOOTER  -------------------->
