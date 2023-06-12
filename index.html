@@ -33,22 +33,30 @@
 
 <body>
     <section class="description">
-        <article class="product">
-            <h3 id="title">De la planta a tu taza</h3>
-            <h1 class="declaration">El mejor café del mundo, ahora en tu casa.</h1>
-            <p id="model" style="font-size: 16px;">Trabajamos con agricultores de todo el mundo para seleccionar los
-                mejores
-                granos de café y que puedas
-                viajar desde la comodidad de tu hogar.
-            </p>
-            <div class="origin">
-                <button id="origin"> Descubrir Orígenes</button>
-                <button id="shop">Comprar café</button>
+        <div>
+            <!-- class="description" -->
+            <div class="product">
+                <h3 id="title">De la planta a tu taza</h3>
+                <h1 class="declaration">El mejor café del mundo, ahora en tu casa.</h1>
+                <p id="model" style="font-size: 16px;">Trabajamos con agricultores de todo el mundo para seleccionar los
+                    mejores
+                    granos de café y que puedas
+                    viajar desde la comodidad de tu hogar.
+                </p>
+                <div class="origin">
+                    <button id="origin"> Descubrir Orígenes</button>
+                    <button id="shop">Comprar café</button>
+                </div>
+
             </div>
+        </div>
+        <div id="cofe">
+            <!-- class="description" -->
 
-        </article>
 
-        <img class="coffe" src="./images/Hero image (1).png" width="588" height="390">
+
+            <img class="description" src="./images/Hero image (1).png">
+        </div>
     </section>
 
     <!------------------------------COFFECARDS-------------------------------->
@@ -58,7 +66,8 @@
             <div class="coffeecard">
                 <button class="buttonforbuying"> <img src="./images/Icon (1).png"> </button>
                 <h3>Recibe tu pedido sin preocuparte</h3>
-                <p>Tienes cosas más importantes en la cabeza por es con nuestras suscripción de café, nunca te quedarás
+                <p>Tienes cosas más importantes en la cabeza por es con nuestras suscripción de café, nunca te
+                    quedarás
                     sin
                     tu taza de la mañana.
                 </p>
@@ -74,7 +83,8 @@
                 <button class="buttonforbuying" id="benefits"> <img src="./images/Icon of gift.png"> </button>
                 <h3>Descuentos y beneficios</h3>
                 <p>
-                    Cada dos meses, te regalamos una bolsa de un nuevo origen sorpresa, para que lo descubras junto a
+                    Cada dos meses, te regalamos una bolsa de un nuevo origen sorpresa, para que lo descubras junto
+                    a
                     nosotros.
                 </p>
             </div>
@@ -112,18 +122,37 @@
         <h2 style="color:#FFFFFF">Preguntas frecuentes</h2>
         <!-- <div></div> -->
         <div class="divider">
-            <h2>¿Cómo hago el pedido?</h2>
+            <a href="#hide1" class="hide1" id="hide1">
+                <h2>¿Cómo hago el pedido?^
+            </a>
+            <a href="#show1" class="show1" id="show1"><img src="images/Icon (10).png" id="detract"></a></h2>
 
-            <p> Selecciona el café que desees probar y completa el proceso de compra. Si lo prefieres, te preguntaremos
-                cada cuánto quieres que te lo mandemos a casa y así nunca te quedarás sin café.</p>
+
+            <hr>
+            </hr>
+            <div id="selectCoffee">
+                <p> Selecciona el café que desees probar y completa el proceso de compra. Si lo prefieres, te
+                    preguntaremos
+                    cada cuánto quieres que te lo mandemos a casa y así nunca te quedarás sin café.</p>
+            </div>
         </div>
         <div class="divider">
-            <h2>¿Por qué los precios son tan bajos?</h2>
+            <a id="show2">
+                <h2>¿Por qué los precios son tan bajos?<img src="images/Icon (4).png"><img src="images/Icon (10).png"
+                        id="detract"></h2>
+            </a>
             <!-- <div class="divider"></div> -->
-            Viajamos constantemente para encontrar los mejores granos y a los agricultores más exigentes. Si podemos
-            ofrecerte estos precios es porque tratamos directamente con los productores de café, sin intermediarios. Así
-            obtenemos el mejor precio para ti y la persona que está detrás de los granos de café recibe el mayor
-            beneficio posible.
+            <hr>
+            </hr>
+            <div id="ourCulture">
+                <p>
+                    Viajamos constantemente para encontrar los mejores granos y a los agricultores más exigentes. Si
+                    podemos
+                    ofrecerte estos precios es porque tratamos directamente con los productores de café, sin
+                    intermediarios. Así
+                    obtenemos el mejor precio para ti y la persona que está detrás de los granos de café recibe el mayor
+                    beneficio posible.</p>
+            </div>
         </div>
         <div class="divider">
             <h2>¿Es posible enviar café a mi oficina?</h2>
@@ -134,7 +163,7 @@
     </section>
     <!----------------------- COFFE SHOP  --------------->
     <section class="cometous">
-        <div class="blockInfoCoffe">
+        <div class="blockInfoCoffe" id="padding">
             <h2 id="tryit">Pruébalo en nuestro coffee shop</h2>
             <p id="ourshopinthemid"> Visita nuestra cafetería en el centro de la ciudad para probar los granos de café
                 antes de hacer tu
@@ -145,16 +174,16 @@
 
             </div>
         </div>
-        <div class="blockImageCoffe">
+        <div class="cometous">
             <img class="visitUs" id="cofehero" src="./images/Hero coffe.png" alt="installment">
         </div>
     </section>
-<!-- https://www.youtube.com/watch?v=B3KBKX8mIHo -->
+    <!-- https://www.youtube.com/watch?v=B3KBKX8mIHo -->
     <!-------------------------------  FORM --------------->
     <section class="contactus">
         <article class="contactInfo">
             <h3 id="headerOfContactUs">Entra en contacto con nosotros</h3>
-            <p>Si tienes dudas, ponte en contacto con nosotros a rtavés del formularios y te responderemos lo antes
+            <p>Si tienes dudas, ponte en contacto con nosotros a través del formularios y te responderemos lo antes
                 posible.
             </p>
             <div>
@@ -195,9 +224,9 @@
                         <option value="gr">GR</option>
                         <option value="fr">FR</option>
                         <option value="it">IT</option>
+                        <input type="number" name="numbersPhone" id="numbersPhone" placeholder="+1 (555) 987-6543"
+                            required minlength="8" maxlength="11">
                     </select>
-                    <input type="number" name="numbersPhone" id="numbersPhone" placeholder="+1 (555) 987-6543" required
-                        minlength="8" maxlength="11">
                 </div>
             </div>
             <div class="textArea">
@@ -251,7 +280,7 @@
                     <a href="#" class="logo">Política de coockes</a>
                     <a href="#" class="logo">Términos y condiciones</a>
                 </div>
-                
+
             </div>
             <div></div>
         </div>

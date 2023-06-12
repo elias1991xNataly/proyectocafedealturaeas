@@ -1,5 +1,9 @@
 
 /* navegador */
+*{
+    margin: 0px;
+    padding: 0px;
+}
 nav {
     display: flex;
     align-content: flex-start;
@@ -149,8 +153,73 @@ section.novedades {
 
 /* #cofehero {
 
-} */
+} 
+<----coffecards---->*/
+article.coffeecardsconditions {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 486px; 
+    padding: 48px 40px;
+    width: 40px;
+    left: 10px;
+    flex: content;
+    column-gap: 16px;
+    justify-content: space-evenly;
+}
 
+
+.buttonforbuying {
+    width: 64px;
+    height: 64px;
+    background-color: #2A5B45;
+    border-radius: 20px;
+    border: #FFFFFF;
+}
+
+
+
+
+/* left: 10px; */
+/* column-gap: 24px; */
+
+
+/*importante*/
+div.coffeecard {
+    width: 400px;
+    height: 300px;
+    position: relative;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    align-content: center;
+    border-radius: 20px;
+    padding: 24px;
+}
+
+
+
+.coffeecards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    align-self: flex-start;
+    background-image: url(https://s3-alpha-sig.figma.com/img/03a7/c79a/086aa1e226e5adfe010fd0fb3ff3e2cb?Expires=1685318400&Signature=CAlTit-JRAZrKabAm3GraaDpYhg3X0NGEEiH3QjpG96AmlsdEuz1H4N3ZFr-Y7uhCN-Ow7QXE20v18NxhYYx53i7koCVJUVRrLJ7llo8WvKunZequToJotQtdJ5WtH7PJeoImwJD2SbHN3v2wznyD10Pwg6f5qcc6nd4Q9KE6V-hBi0MVRuiudWWJyKpCBU3sPybGZt0dVlOFTKZFD6vnOkfSOIwnKozq3Rcx5uf1DrwFTm3botGQOe2xrpk-9w2l46CLbHpQiKQpaHEm8F5B-ydPB1pSWTtEU1Uvg2cfX94pvXdpj1ur8ONvGa71v1YeObFg4gbb7xBMd8LNwPl1g__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position: center center;
+    min-height: 60vh;
+    padding: 40px;
+    left: 40px;
+    align-content: center;
+    flex-direction: row;
+
+}
 
 
 .coffeecardsText {

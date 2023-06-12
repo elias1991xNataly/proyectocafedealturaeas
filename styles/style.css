@@ -75,12 +75,10 @@ div.splitter {
     /* height: 24px; */
 }
 
-
-h1 {
-
-    line-height: 44px;
-    width: 1288px;
+div.phone {
+    gap: 64px;
 }
+
 
 /*-------------------------------------------------DESCRIPTION-----------------------------------*/
 #model {
@@ -92,42 +90,35 @@ h1 {
     background-color: #2A5B45;
     color: white;
     width: 168px;
-    /* height: 40px; */
+    height: 40px;
 }
 
 #origin {
     background-color: #1F1815;
     color: #FFFFFF;
     width: 168px;
-    /* height: 40px; */
+    height: 40px;
 }
 
 .description {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-basis: content;
     height: 500px;
     background: #E3DED74D 30%;
-    padding: 48px 40px;
+    padding: 48px 20px 48px 40px;
     gap: 8px;
-
-
-}
-
-.description .coffe {
-    display: flex;
-    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F7F5F3;
 
 }
 
-.coffe {
 
-    position: absolute;
-    bottom: 48px;
-    right: 40px;
-    top: 138px;
-    border-radius: 20px;
-}
+
+
+
+
 
 
 
@@ -152,13 +143,7 @@ h1 {
 }
 
 
-#imageofcofferecolecting {
-    display: flex;
-    align-items: flex-end;
-    left: 700px;
-    margin-left: 700px;
 
-}
 
 #title {
     left: 18px;
@@ -167,11 +152,10 @@ h1 {
 
 
 
-div.phone {
-    gap: 64px;
-}
+
 
 /*------------------------------------------------COFFECARDS------------------------------*/
+
 
 article.coffeecardsconditions {
     display: flex;
@@ -192,10 +176,7 @@ article.coffeecardsconditions {
     height: 64px;
     background-color: #2A5B45;
     border-radius: 20px;
-    position: absolute;
-    bottom: 230px;
     border: #FFFFFF;
-    margin-top: 124px;
 }
 
 
@@ -217,6 +198,7 @@ div.coffeecard {
     justify-content: center;
     align-content: center;
     border-radius: 20px;
+    padding: 24px;
 }
 
 
@@ -237,6 +219,7 @@ div.coffeecard {
     padding: 40px;
     left: 40px;
     align-content: center;
+    flex-direction: row;
 
 }
 
@@ -326,21 +309,13 @@ section.novedades {
 
 .coffeecardsText {
     color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
 
 
 }
 
 
-/* p.product {
-    color: white;
-    font-size: 24px;
-    line-height: 28px;
-    text-align: initial;
-    height: 240px;
-    left: 200px;
-    position: relative;
-    bottom: 100px;
-} */
 
 
 
@@ -381,16 +356,37 @@ section.novedades {
     background-color: #2A5B45;
 }
 
+/* aqui hago los divs expandibles*/
+#selectCoffee{
+    display: none;
+}
+#ourCulture{
+    display: none;
+}
+
+
+.hide1:target  #selectCoffee {
+    display: inline;
+}
+
+
+#detract{
+    display: none;
+}
 /*--------------------------------------------COFFE SHOP---------------------*/
 .cometous {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: nowrap;
-    padding: 48px 40px;
+    /* padding: 48px 40px; */
     align-items: center;
+    flex-grow: 1;
 }
 
+.blockInfoCoffe {
+    width: 45%;
+}
 
 #ourshopinthemid {
     width: 510px;
@@ -405,22 +401,28 @@ section.novedades {
     color: #3E3D3D;
     gap: 10px;
     display: flex;
+
 }
 
-#visitUs {
+#padding {
+    padding: 48px 40px;
+}
+
+.visitUs {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    height: 390px;
     flex-wrap: wrap;
     align-content: center;
     align-items: center;
+    width: 588px;
 }
 
+
 #cofehero {
-    width: 588px;
     border-radius: 20px;
-    padding: 40px;
+    flex-grow: 1;
+    padding: 48px 40px 48px 0px;
 }
 
 .visitUs {
@@ -435,7 +437,8 @@ section.contactus {
     width: auto;
     gap: 24px;
     background-color: #E3DED7;
-flex-wrap: nowrap;}
+    flex-wrap: nowrap;
+}
 
 
 
@@ -450,15 +453,13 @@ flex-wrap: nowrap;}
     flex-direction: column;
     padding: 40px;
     margin-top: 116px;
-    width: auto;
     justify-content: center;
     align-items: flex-start;
-    text-justify: distribute;
-    width: 50vw;
+    /* width: 510px; */
+    /* flex-grow: 1; */
 }
 
 .form {
-    width: 588px;
     height: 552px;
     display: flex;
     flex-direction: column;
@@ -469,11 +470,12 @@ flex-wrap: nowrap;}
     margin-right: 40px;
     justify-content: space-evenly;
     background-color: #FCFCFB;
-    width: 50vw;
+    flex-grow: 1;
+    width: 44%;
 }
 
 
-#strong{
+#strong {
     text-decoration: underline;
 }
 
@@ -495,10 +497,20 @@ flex-wrap: nowrap;}
     gap: 4px;
 }
 
+#numbersPhone {
+    width: 92%;
+    flex-grow: 1;
+}
+
 #termsandConditions {
     color: black;
     font-weight: bold;
     text-decoration: none;
+}
+
+#textareaForm {
+    width: 100%;
+    flex-grow: 1;
 }
 
 #buttonForm {
@@ -508,7 +520,8 @@ flex-wrap: nowrap;}
     color: white;
     border-radius: 4px;
 }
-.checkForm{
+
+.checkForm {
     text-decoration: none;
 }
 
@@ -522,7 +535,7 @@ flex-wrap: nowrap;}
 }
 
 
-#footer  {
+#footer {
     width: auto;
     background-color: black;
     display: flex;
