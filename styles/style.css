@@ -386,7 +386,7 @@ section.novedades {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     padding: 48px 40px;
     align-items: center;
 }

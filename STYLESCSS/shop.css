@@ -1,0 +1,278 @@
+
+/* navegador */
+nav {
+    display: flex;
+    align-content: flex-start;
+    justify-content: space-between;
+    background: black;
+    padding: 12px 40px;
+    color: white;
+    /* height: 64px; */
+    font-style: normal;
+    align-items: center;
+    font-weight: 400;
+    line-height: 35px;
+    opacity: 0.86;
+    bottom: 24px;
+    top: 24px;
+    padding: 12px;
+
+}
+
+div.splitter {
+    display: flex;
+    justify-content: center;
+    background: black;
+    gap: 32px;
+
+
+}
+
+#logInButton {
+    padding: 12px 24px;
+    width: 130px;
+    /* height: 40px; */
+    background-color: #515051;
+    color: #D3D3D3;
+}
+
+.phone a {
+    outline: none;
+    text-decoration: none;
+    color: #D3D3D3;
+    padding: 40px 12px;
+
+}
+
+
+.goto {
+    color: white;
+    /* height: 36px; */
+    font-style: normal;
+    font-weight: 400;
+    line-height: 35px;
+    opacity: 0.86;
+
+}
+
+.callus {
+    width: 200px;
+    /* height: 24px; */
+}
+
+
+h1 {
+
+    line-height: 44px;
+    width: 1288px;
+}
+
+
+
+/* PRODUCTOS */
+.novelty {
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    /* height: 486px; */
+    align-content: center;
+    align-items: baseline;
+    margin: 40px;
+}
+
+.tag {
+    top: -200px;
+    position: relative;
+}
+
+.imageSetUp {
+    margin-top: 24px;
+}
+
+.noveltyText {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    line-height: 44px;
+
+
+}
+
+.addButton {
+    /* background-color: #2A5B45; */
+    color: white;
+    border-radius: 4px;
+    background: rgba(42, 91, 69, 0.7);
+    border-color: rgba(42, 91, 69, 0.7);
+    border: none;
+    padding: 8px;
+    gap: 8px;
+    margin-bottom: 24px;
+}
+
+
+
+.noveltyButton {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    text-decoration: underline;
+    color: black;
+    gap: 10px;
+    margin-bottom: 48px;
+
+}
+
+div.products {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 282px;
+    /* height: auto; */
+    border: 1px solid #EDEAE6;
+    gap: 24px;
+}
+
+section.novedades {
+    display: flex;
+    flex-direction: row;
+    flex: none;
+    height: 348px;
+}
+
+
+/* #cofehero {
+
+} */
+
+
+
+.coffeecardsText {
+    color: #FFFFFF;
+
+
+}
+
+/*FOOTER*/
+.firstPartOfFooter {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+#footer  {
+    width: auto;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    row-gap: 100px;
+
+}
+
+
+#copyrightfooter {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    background-color: #2B2A2B;
+    color: #E9E9E9;
+}
+
+
+
+#identity {
+    padding: 40px;
+}
+
+.waysOfContact {
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+#wehelpyou {
+    color: white;
+
+}
+
+.directionsAndTerms {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    width: 425px;
+}
+
+.logo a:hover {
+    color: white;
+    margin: 0px;
+    text-decoration: none;
+}
+
+.logo {
+    color: white;
+    margin: 0px;
+    text-decoration: none;
+}
+
+a.logo {
+    margin: 10px;
+}
+
+a.logo:link {
+    text-decoration: none;
+}
+
+.directions {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    column-gap: 16px;
+
+
+
+}
+
+
+.terms {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: stretch;
+    flex-wrap: wrap;
+    bottom: 40px;
+    position: relative;
+
+}
+
+.terms a {
+    text-decoration: none;
+}
+
+#email {
+    width: 232px;
+}
+
+.contact {
+    color: #DEDEDE;
+    background-color: #515051;
+}
+
+
+#phone {
+    width: 182px;
+}
