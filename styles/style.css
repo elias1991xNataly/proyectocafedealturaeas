@@ -79,6 +79,15 @@ div.phone {
     gap: 64px;
 }
 
+.cartsection {
+    display: flex;
+    flex-direction: row;
+    flex-grow: initial;
+    gap: 10px;
+    height: 24px;
+    align-items: center;
+}
+
 
 /*-------------------------------------------------DESCRIPTION-----------------------------------*/
 #model {
@@ -91,6 +100,8 @@ div.phone {
     color: white;
     width: 168px;
     height: 40px;
+    border: none;
+    border-radius: 4px;
 }
 
 #origin {
@@ -98,6 +109,8 @@ div.phone {
     color: #FFFFFF;
     width: 168px;
     height: 40px;
+    border: none;
+    border-radius: 4px;
 }
 
 .description {
@@ -115,7 +128,10 @@ div.phone {
 }
 
 
-
+.origin {
+    display: flex;
+    gap: 8px;
+}
 
 
 
@@ -266,6 +282,9 @@ div.coffeecard {
     margin-bottom: 24px;
 }
 
+.addButton:hover {
+    background: #2A5B45;
+}
 
 
 .noveltyButton {
@@ -357,22 +376,14 @@ section.novedades {
 }
 
 /* aqui hago los divs expandibles*/
-#selectCoffee{
+/* .textexpand1{
     display: none;
-}
-#ourCulture{
-    display: none;
-}
+} */
 
 
-.hide1:target  #selectCoffee {
-    display: inline;
-}
 
 
-#detract{
-    display: none;
-}
+
 /*--------------------------------------------COFFE SHOP---------------------*/
 .cometous {
     display: flex;
@@ -519,7 +530,9 @@ section.contactus {
     background-color: #376450;
     color: white;
     border-radius: 4px;
+    border: none;
 }
+
 
 .checkForm {
     text-decoration: none;
@@ -545,6 +558,7 @@ section.contactus {
 
 }
 
+p.waysOfContact {}
 
 #copyrightfooter {
     display: flex;
@@ -566,7 +580,7 @@ section.contactus {
 .waysOfContact {
     display: flex;
     flex-direction: column;
-
+    gap: 8px;
 
 }
 
@@ -594,6 +608,10 @@ section.contactus {
     color: white;
     margin: 0px;
     text-decoration: none;
+}
+
+#footerlogo {
+    gap: 3px;
 }
 
 a.logo {
@@ -633,6 +651,7 @@ a.logo:link {
 
 #email {
     width: 232px;
+    border-radius: 4px;
 }
 
 .contact {
@@ -643,4 +662,5 @@ a.logo:link {
 
 #phone {
     width: 182px;
+    border-radius: 4px;
 }

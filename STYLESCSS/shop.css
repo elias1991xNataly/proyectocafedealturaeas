@@ -115,6 +115,10 @@ h1 {
     gap: 8px;
     margin-bottom: 24px;
 }
+.addButton:hover{
+    background: #2A5B45;
+}
+
 
 
 
