@@ -252,6 +252,14 @@ div.coffeecard {
     margin: 40px;
 }
 
+.products:hover {
+    background-color: #F7F5F3;
+}
+
+.products:hover .addButton{
+    background: #2A5B45
+}
+
 .tag {
     top: -200px;
     position: relative;
@@ -282,9 +290,7 @@ div.coffeecard {
     margin-bottom: 24px;
 }
 
-.addButton:hover {
-    background: #2A5B45;
-}
+
 
 
 .noveltyButton {
@@ -343,10 +349,14 @@ section.novedades {
 .divider {
     width: 620px;
     border: 1px solid #E3DED7;
-    background-color: #D3D3D3;
+    background-color: #F7F5F3;
     border-radius: 10px;
     padding: 24px;
     margin: 16px;
+    /* height: 132px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .resolveDoubts {
@@ -376,11 +386,60 @@ section.novedades {
 }
 
 /* aqui hago los divs expandibles*/
-/* .textexpand1{
-    display: none;
-} */
+button.accordion {
+    background-color: #F7F5F3;
+    color: #444;
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+    height: 50px;
 
+}
 
+.line {
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px solid #E3DED7;
+    margin-top: 16px;
+}
+
+button.accordion.active,
+button.accordion:hover {
+    background-color: #F7F5F3;
+}
+
+button.accordion>h2:after {
+    content: url(../images/Chevronup.png);
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+
+}
+
+button.accordion.active>h2:after {
+    content: url(../images/Chevrondown.png);
+    position: relative;
+    margin-top: 10px;
+}
+
+div.panel {
+    padding: 0 18px;
+    background-color: #F7F5F3;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.6s ease-in-out;
+    opacity: 0;
+}
+
+div.panel.show {
+    opacity: 1;
+    max-height: 500px;
+}
 
 
 
@@ -558,7 +617,6 @@ section.contactus {
 
 }
 
-p.waysOfContact {}
 
 #copyrightfooter {
     display: flex;

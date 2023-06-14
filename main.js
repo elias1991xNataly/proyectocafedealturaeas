@@ -1,16 +1,31 @@
 // DIV expandible
 
-var divcollapse1 = document.querySelectorAll(".divider")
-var divcollapse2 = document.querySelector("#textcollapse2")
-var textexpand1 = document.querySelector("#textexpand1")
-var textexpand2 = document.querySelector("#textexpand2")
-console.log(divcollapse1);
-divcollapse1.forEach((element, key) => {
-    element.addEventListener("click", () => {
-        console.log("hola");
-        textexpand1[key].classList.toggle("textexpand1")
-    })
-});
+var divcollapse1 = document.getElementsByClassName("accordion");
+var y;
+for (let y = 0; y < divcollapse1.length; y++) {
+    divcollapse1[y].onclick = function(){
+        this.classList.toggle("active");
+        this.nextElementSibling.classList.toggle("show");
+    }
+    
+}
+
+
+// console.log(divcollapse1);
+// divcollapse1.forEach((element, key) => {
+//     element.addEventListener("click", () => {
+//         console.log("hola");
+//         textexpand1[key].classList.toggle("showtext")
+//     })
+// });
+
+
+
+
+
+
+
+
 
 
 
@@ -27,10 +42,7 @@ addButtonsum.forEach((element) => {
         let getnumber=localStorage.getItem("numberOfItems");
         console.log(getnumber);
         let realnumber=JSON.parse(getnumber);
-        // cart.parentElement.append(realnumber);
-        // cart.parentElement.append(p);
         p.innerText=getnumber; 
-        // console.log(p);
     })
 });
 let putnumber=localStorage.getItem("numberOfItems");
@@ -47,10 +59,6 @@ p.style.flexDirection="row";
 p.style.justifyContent="center";
 p.style.alignItems="center";
 console.log(putnumber);
-// div.style.color="white";
-// cart.parentElement.append(putnumber);
 cart.parentElement.append(p);
-// div.append(p);
-// cart.parentElement.append(p);
 
 

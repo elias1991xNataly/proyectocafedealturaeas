@@ -1,6 +1,6 @@
 
 /* navegador */
-*{
+html, body{
     margin: 0px;
     padding: 0px;
 }
@@ -116,10 +116,12 @@ h1 {
     margin-bottom: 24px;
 }
 .addButton:hover{
-    background: #2A5B45;
+    background: #F7F5F3; 
 }
 
-
+.products:hover .addButton{
+   background: #2A5B45; 
+}
 
 
 .noveltyButton {
@@ -239,8 +241,13 @@ div.coffeecard {
     justify-content: space-between;
 }
 
+.logoInTheFooter{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
 
-#footer  {
+#footer {
     width: auto;
     background-color: black;
     display: flex;
@@ -271,7 +278,7 @@ div.coffeecard {
 .waysOfContact {
     display: flex;
     flex-direction: column;
-
+    gap: 8px;
 
 }
 
@@ -299,6 +306,13 @@ div.coffeecard {
     color: white;
     margin: 0px;
     text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    row-gap: 10px;
+}
+
+#footerlogo {
+    gap: 7px;
 }
 
 a.logo {
@@ -338,6 +352,7 @@ a.logo:link {
 
 #email {
     width: 232px;
+    border-radius: 4px;
 }
 
 .contact {
@@ -348,4 +363,5 @@ a.logo:link {
 
 #phone {
     width: 182px;
+    border-radius: 4px;
 }

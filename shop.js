@@ -41,7 +41,7 @@ var shoppingcart = (function () {
 
     //Load cart
     function loadCart() {
-        cart = JSON.parse(sessionStorage.getItem("shoppingCart"));
+        cart2 = JSON.parse(sessionStorage.getItem("shoppingCart"));
     }
     if (sessionStorage.getItem("shoppingCart") != null) {
         loadCart();
