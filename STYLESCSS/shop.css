@@ -119,6 +119,10 @@ h1 {
     background: #F7F5F3; 
 }
 
+.products:hover{
+    background-color: #F7F5F3;
+}
+
 .products:hover .addButton{
    background: #2A5B45; 
 }

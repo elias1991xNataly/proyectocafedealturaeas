@@ -34,6 +34,10 @@ nav {
 
 }
 
+.splitter a {
+    text-decoration: none;
+}
+
 div.splitter {
     display: flex;
     justify-content: center;
@@ -233,7 +237,6 @@ div.coffeecard {
     background-position: center center;
     min-height: 60vh;
     padding: 40px;
-    left: 40px;
     align-content: center;
     flex-direction: row;
 
@@ -256,7 +259,7 @@ div.coffeecard {
     background-color: #F7F5F3;
 }
 
-.products:hover .addButton{
+.products:hover .addButton {
     background: #2A5B45
 }
 
@@ -336,6 +339,8 @@ section.novedades {
     color: #FFFFFF;
     display: flex;
     flex-direction: column;
+    line-height: 44px;
+    width: 1288px;
 
 
 }
@@ -526,7 +531,7 @@ section.contactus {
     justify-content: center;
     align-items: flex-start;
     /* width: 510px; */
-    /* flex-grow: 1; */
+    flex-grow: 1;
 }
 
 .form {
@@ -541,7 +546,7 @@ section.contactus {
     justify-content: space-evenly;
     background-color: #FCFCFB;
     flex-grow: 1;
-    width: 44%;
+    width: 37%;
 }
 
 
