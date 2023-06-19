@@ -1,9 +1,10 @@
-
 /* navegador */
-html, body{
+html,
+body {
     margin: 0px;
     padding: 0px;
 }
+
 nav {
     display: flex;
     align-content: flex-start;
@@ -32,6 +33,12 @@ div.splitter {
 
 }
 
+.goHome {
+    display: flex;
+    position: relative;
+    gap: 7px;
+}
+
 #logInButton {
     padding: 12px 24px;
     width: 130px;
@@ -48,6 +55,14 @@ div.splitter {
 
 }
 
+.goHome a {
+    text-decoration: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: #D3D3D3;
+}
 
 .goto {
     color: white;
@@ -115,16 +130,17 @@ h1 {
     gap: 8px;
     margin-bottom: 24px;
 }
-.addButton:hover{
-    background: #F7F5F3; 
+
+.addButton:hover {
+    background: #F7F5F3;
 }
 
-.products:hover{
+.products:hover {
     background-color: #F7F5F3;
 }
 
-.products:hover .addButton{
-   background: #2A5B45; 
+.products:hover .addButton {
+    background: #2A5B45;
 }
 
 
@@ -169,7 +185,7 @@ article.coffeecardsconditions {
     display: flex;
     flex-direction: row;
     align-items: center;
-    height: 486px; 
+    height: 486px;
     padding: 48px 40px;
     width: 40px;
     left: 10px;
@@ -245,7 +261,7 @@ div.coffeecard {
     justify-content: space-between;
 }
 
-.logoInTheFooter{
+.logoInTheFooter {
     display: flex;
     flex-direction: column;
     gap: 10px;

@@ -23,15 +23,15 @@ cart.style.gap = "10px";
 
 
 // 
-let insertProducts=document.querySelector("#products");
-let container=document.createElement("div");
+let insertProducts = document.querySelector("#products");
+let container = document.createElement("div");
 insertProducts.appendChild(container);
 
 function generateDivs(arr) {
-    
-for (const a of arr) {
-        let eachproduct=document.createElement("div");
-        eachproduct.innerHTML=`
+
+    for (const a of arr) {
+        let eachproduct = document.createElement("div");
+        eachproduct.innerHTML = `
         <div class="cart-item cart-column">
         <img class="cart-item-image" src="${a.imagen}" width="100" height="100">
         <span class="cart-item-title">${a.name}</span>
@@ -43,15 +43,39 @@ for (const a of arr) {
     </div>
     <div class="line2"></div>
     `;
-        
-        
+
+
         container.appendChild(eachproduct);
+    }
 }
-}
-let jsonOfCart2=localStorage.getItem("cart2");
-let ObjOfCart2=JSON.parse(jsonOfCart2);
-let copyOfObjOfCart2=Object.assign([],ObjOfCart2);
+let jsonOfCart2 = localStorage.getItem("cart2");
+let ObjOfCart2 = JSON.parse(jsonOfCart2);
+let copyOfObjOfCart2 = Object.assign([], ObjOfCart2);
 console.log(copyOfObjOfCart2);
 generateDivs(copyOfObjOfCart2);
-container.style.display="flex";
-container.style.flexDirection="column";
+container.style.display = "flex";
+container.style.flexDirection = "column";
+
+
+let numbe = JSON.parse(localStorage.getItem("cart2")).length;
+let cartNumber = document.querySelector("#numberItems");
+if (numbe != 0) {
+    cartNumber.innerText = `Cesta(${numbe})`;
+};
+
+
+
+
+
+let numtoMultiply = 0;
+let amountSub = document.querySelector("#amountOfSubtotal");
+for (const item of copyOfObjOfCart2) {
+    
+    let patternComma = /[,]/g;
+    let paternEuro = /[€]/g;
+    let pri = item.price;
+    let numberPrice = pri.replace(patternComma, ".").replace(paternEuro, "");
+    console.log((numberPrice));
+    numtoMultiply += numberPrice * item.count;
+    amountSub.innerText = `${numtoMultiply},00 €`;
+};
