@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sucess</title>
+    <link rel="stylesheet" href="success.css">
+</head>
+
+<body>
+    <nav>
+        <a class="goHome" href="index.html">
+            <p class="goHome">cafedealtura.com <b> <img src="./images/Vector.png"></b></p>
+        </a>
+        <div class="splitter">
+            <a href="shop.html">
+                <p class="goto">Tienda</p>
+            </a>
+            <a href="#">
+                <p class="goto">Suscripción</p>
+            </a>
+            <p class="goto">Para empresas</p>
+            <p class="goto">Sobre nosotros</p>
+            <p class="goto">Contacto</p>
+        </div>
+        <div class="phone">
+            <a type="color:black" href="/"><img src="./images/Icon.png">+34 919 49 05 18</a>
+
+
+            <a href="#"> <button id="logInButton">Iniciar sesión</button></a>
+        </div>
+        <div class="cartsection"><a href="cart.html" id="cart"> <img src="./images/Group.png"></a></div>
+    </nav>
+    <section class="success">
+        <div >
+            <img src="./images/Illustration.png">
+        </div>
+        <div>
+            <h2>El pedido se ha realizado con exito</h2>
+        </div>
+        <div id="stateOfPurchase"></div>
+        <div class="totalOfCart">
+            <h3>Tu pedido</h3>
+            <div id="products"></div>
+            <div class="line"></div>
+            <div class="subtotalInEuros">
+                <p>SUBTOTAL</p>
+                <p class="amount" id="amountOfSubtotal"></p>
+            </div>
+            <div class="subtotalInEuros">
+                <p>ENVIO</p>
+                <p class="amount" id="amountOfSend"></p>
+            </div>
+            <div class="line"></div>
+            <div>
+                <h3 class="subtotalInEuros">TOTAL</h3>
+                <p class="amount" id="amountOfTotal"></p>
+            </div>
+            <div class="subtotalInEuros">
+                <p></p>
+                <p class="amount" id="vat"></p>
+            </div>
+        </div>
+        <a href="shop.html"> <button id="goShopButton">Volver a la tienda</button></a>
+    </section>
+    <footer class="footer">
+        <p>Todos los derechos reservados - Café de Altura SL - 2022</p>
+    </footer>
+    <script src="success.js"></script>
+</body>
+
+</html>

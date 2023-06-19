@@ -1,0 +1,148 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Outfit', sans-serif;
+    height: 100vw;
+
+}
+
+.description .novelty .faq .cometous .contactus footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+/*-------------------------------------------------NAV-----------------------------------*/
+
+.goHome{
+    display: flex;
+    flex-direction: row;
+    gap: 7px;
+    position: relative;
+   color:#D3D3D3 ;
+    
+}
+.goHome a{
+    text-decoration: none;
+}
+nav {
+    display: flex;
+    align-content: flex-start;
+    justify-content: space-between;
+    background: black;
+    padding: 12px 40px;
+    color: white;
+    /* height: 64px; */
+    font-style: normal;
+    align-items: center;
+    font-weight: 400;
+    line-height: 35px;
+    opacity: 0.86;
+    bottom: 24px;
+    top: 24px;
+    padding: 12px;
+
+}
+
+nav a{
+    text-decoration: none;
+}
+.splitter a {
+    text-decoration: none;
+}
+
+div.splitter {
+    display: flex;
+    justify-content: center;
+    background: black;
+    gap: 32px;
+
+
+}
+
+#logInButton {
+    padding: 12px 24px;
+    width: 130px;
+    /* height: 40px; */
+    background-color: #515051;
+    color: #D3D3D3;
+}
+
+.phone a {
+    outline: none;
+    text-decoration: none;
+    color: #D3D3D3;
+    padding: 40px 12px;
+
+}
+
+
+.goto {
+    color: white;
+    /* height: 36px; */
+    font-style: normal;
+    font-weight: 400;
+    line-height: 35px;
+    opacity: 0.86;
+
+}
+
+.callus {
+    width: 200px;
+    /* height: 24px; */
+}
+
+div.phone {
+    gap: 64px;
+}
+
+.cartsection {
+    display: flex;
+    flex-direction: row;
+    flex-grow: initial;
+    gap: 10px;
+    height: 24px;
+    align-items: center;
+}
+
+/*  */
+
+.checkout{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 24px;
+    gap: 16px;
+}
+.totalOfCart{
+    background-color: #F7F5F3;
+    width: 384px;
+    gap: 30px;
+    height:auto ;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-grow: 0;
+}
+.line {
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px solid #E3DED7;
+    margin-top: 16px;
+}
+
+#goSuccess{
+    color: #FFFFFF;
+    background-color: #2A5B45;
+    width: 129px;
+    height: 40px;
+    font-weight: 600px;
+    font-size: 14px;
+    line-height: 16px;
+    flex: none;
+    border: none;
+    border-radius: 4px;
+}

@@ -1,9 +1,9 @@
 
-let number = localStorage.getItem("numberOfItems");
+// let number = localStorage.getItem("numberOfItems");
 let cart = document.querySelector(".cartsection");
 let paragraph = document.createElement("p");
 cart.appendChild(paragraph);
-paragraph.innerText = number;
+// paragraph.innerText = getCart2TurnedToObj.length;
 console.log(paragraph);
 paragraph.style.color = "white";
 paragraph.style.width = "24px";
@@ -37,9 +37,21 @@ addButtonSum2.forEach((element,key)=>{
     console.log(images);
     cart2.push(object);
     console.log(cart2);
-    console.log(cart2.length);
+    let final=JSON.stringify(cart2);
+    localStorage.setItem("cart2", final);
+    let getCart2 = localStorage.getItem("cart2");
+    let getCart2TurnedToObj = JSON.parse(getCart2);
+    console.log(getCart2TurnedToObj.length);
+    // p2.innerText=getCart2TurnedToObj.length;
+    paragraph.innerText = getCart2TurnedToObj.length;
   })
 });
+
+let p2=document.createElement("p");
+const cart3 = document.querySelector("#cart");
+cart3.parentElement.append(p2);
+paragraph.innerText=JSON.parse(localStorage.getItem("cart2")).length;
+
 
 //Métodos de objetos: Object.assign, Object.keys, Object.values, Object.entries
 //hasOwnProperty
