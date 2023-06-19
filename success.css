@@ -4,13 +4,13 @@
     font-family: 'Outfit', sans-serif;
 
 }
-
+/* 
 nav .success footer {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-}
+} */
 
 /*-------------------------------------------------NAV-----------------------------------*/
 .goHome {
@@ -108,9 +108,18 @@ div.phone {
 }
 
 /* SUCCESS */
+.success {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    column-gap: 24px;
+    position: relative;
+    align-items: center;
+}
 #stateOfPurchase {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .totalOfCart {
@@ -121,8 +130,14 @@ div.phone {
     padding: 24px;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    flex-grow: 0;
+}
+article.statement {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
 }
 
 #goShopButton {
@@ -155,13 +170,7 @@ div.phone {
     color: #2A5B45;
 }
 
-.success {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    column-gap: 24px;
-    position: relative;
-}
+
 
 .line {
 

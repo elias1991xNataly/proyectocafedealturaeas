@@ -63,7 +63,6 @@ container.style.display = "flex";
 container.style.flexDirection = "column";
 
 
-
 let numbe = JSON.parse(localStorage.getItem("cart2")).length;
 let cartNumber = document.querySelector("#numberItems");
 if (numbe != 0) {
@@ -73,7 +72,7 @@ if (numbe != 0) {
 
 
 
-
+let amountTot = document.querySelector("#amountOfTotal");
 let numtoMultiply = 0;
 let amountSub = document.querySelector("#amountOfSubtotal");
 for (const item of copyOfObjOfCart2) {
@@ -84,4 +83,5 @@ for (const item of copyOfObjOfCart2) {
     console.log((numberPrice));
     numtoMultiply += numberPrice * item.count;
     amountSub.innerText = `${numtoMultiply},00 €`;
+    amountTot.innerText = `${numtoMultiply},00 €`;
 };
