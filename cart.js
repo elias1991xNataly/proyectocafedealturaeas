@@ -32,9 +32,13 @@ function generateDivs(arr) {
     for (const a of arr) {
         let eachproduct = document.createElement("div");
         eachproduct.innerHTML = `
-        <div class="cart-item cart-column">
+        <div class="cartitemcartcolumn">
+        <p class="btn">-</p>
+        <p class="cantProd">${a.count}</p>
+        <p class="btn">+</p>
         <img class="cart-item-image" src="${a.imagen}" width="100" height="100">
         <span class="cart-item-title">${a.name}</span>
+        <div>Paquete de café, 250 gr</div>
     </div>
     <span class="cart-price cart-column">${a.price}</span>
     <div class="cart-quantity cart-column">
@@ -44,10 +48,12 @@ function generateDivs(arr) {
     <div class="line2"></div>
     `;
 
-
         container.appendChild(eachproduct);
     }
 }
+
+let circleOfNumber = document.querySelectorAll(".cantProd");
+
 let jsonOfCart2 = localStorage.getItem("cart2");
 let ObjOfCart2 = JSON.parse(jsonOfCart2);
 let copyOfObjOfCart2 = Object.assign([], ObjOfCart2);
@@ -57,10 +63,11 @@ container.style.display = "flex";
 container.style.flexDirection = "column";
 
 
+
 let numbe = JSON.parse(localStorage.getItem("cart2")).length;
 let cartNumber = document.querySelector("#numberItems");
 if (numbe != 0) {
-    cartNumber.innerText = `Cesta(${numbe})`;
+    cartNumber.innerText = `Cesta\t(${numbe})`;
 };
 
 
@@ -70,7 +77,6 @@ if (numbe != 0) {
 let numtoMultiply = 0;
 let amountSub = document.querySelector("#amountOfSubtotal");
 for (const item of copyOfObjOfCart2) {
-    
     let patternComma = /[,]/g;
     let paternEuro = /[€]/g;
     let pri = item.price;

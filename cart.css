@@ -14,17 +14,19 @@
 
 /*-------------------------------------------------NAV-----------------------------------*/
 
-.goHome{
+.goHome {
     display: flex;
     flex-direction: row;
     gap: 7px;
     position: relative;
-   color:#D3D3D3 ;
-    
+    color: #D3D3D3;
+
 }
-.goHome a{
+
+.goHome a {
     text-decoration: none;
 }
+
 nav {
     display: flex;
     align-content: flex-start;
@@ -44,9 +46,10 @@ nav {
 
 }
 
-nav a{
+nav a {
     text-decoration: none;
 }
+
 .splitter a {
     text-decoration: none;
 }
@@ -114,29 +117,43 @@ div.phone {
     border-bottom: 1px solid #E3DED7;
     margin-top: 16px;
 }
- h2{
-  color:  #2A5B45;
-  font-size: 24px;
 
- }
- .cartTitle{
+h2 {
+    color: #2A5B45;
+    font-size: 24px;
+
+}
+
+.cartTitle {
     display: flex;
     flex-direction: row;
     justify-content: center;
- }
-.productsInCartDescription{
+}
+
+.productsInCartDescription {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding: 24px;
     gap: 16px;
 }
-.subtotalInEuros{
+
+.subtotalInEuros {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-   
+
 }
+
+
+.cartitemcartcolumn{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    gap: 15px;
+}
+
 .line2 {
     width: 60vw;
     height: 1px;
@@ -144,10 +161,10 @@ div.phone {
     margin-top: 16px;
 }
 
-.totalOfCart{
+.totalOfCart {
     background-color: #F7F5F3;
     width: 384px;
-    height:280px ;
+    height: 280px;
     padding: 24px;
     display: flex;
     flex-direction: column;
@@ -156,7 +173,7 @@ div.phone {
     justify-content: space-between;
 }
 
-#goCheckoutButton{
+#goCheckoutButton {
     color: #FFFFFF;
     background-color: #2A5B45;
     width: 129px;
@@ -168,21 +185,43 @@ div.phone {
     border: none;
     border-radius: 4px;
 }
-.goCheckout{
+
+.goCheckout {
     position: relative;
     display: flex;
     gap: 40px;
 }
 
-#buyMore{
-    background-color:#F7F5F3 ;
+.quantity {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#amount {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+#buyMore {
+    background-color: #F7F5F3;
     border: none;
-    
+
 }
-#buyMore a{
+
+#buyMore a {
     text-decoration: none;
-    color:  #2A5B45;
+    color: #2A5B45;
 }
+
+#rangeOfSending {
+    border: none;
+    background-color: #FFFFFF;
+    cursor: none;
+    font-weight: bolder;
+}
+
 /* FOOTER*/
 .footer {
     display: flex;
@@ -196,4 +235,3 @@ div.phone {
     top: 12px;
     bottom: 12px;
 }
-
